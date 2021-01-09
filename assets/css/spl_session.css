@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+.special_session_container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  box-sizing: border-box;
+}
+
+.no-sessions {
+  width: 60%;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=spl_session.css.map */
