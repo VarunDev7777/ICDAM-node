@@ -11,4 +11,10 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1880px) {
+  body {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=common.css.map */
