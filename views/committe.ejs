@@ -14,7 +14,22 @@
 <body>
     <%- include("./Components/header.ejs") %>
     <%- include("./Components/sidebar.ejs") %>
-    <div>Committe</div>
+    <div class="committee_container">
+        <div class="committee_page_options" data-active='0' tabindex="0">
+            <span class="active_option">Steering Committee</span>
+            <div class="coption_container vanish">
+                <div class="coption cactive">Steering Committee</div>
+                <div class="coption">Technical Program Committee</div>
+                <div class="coption">Advisory Committee</div>
+                <div class="coption">European Technical Board</div>
+            </div>
+        </div>
+
+        <div class="steering_committee_container">
+            <h1 class="section_heading">Steering Committee Members</h1>
+            
+        </div>
+    </div>
     <%- include("./Components/footer.ejs") %>
     <script src="/assets/scripts/operations.js"></script>
 </body>

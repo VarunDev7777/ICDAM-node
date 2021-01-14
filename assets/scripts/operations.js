@@ -188,3 +188,69 @@ if(pageparams == "registrations"){
         delay: 1000
     });
 }
+
+// committee section
+if(pageparams == "committe"){
+    let dropdown = document.querySelector(".coption_container")
+    let dropini = document.querySelector(".committee_page_options")
+    let activeop = document.querySelector(".active_option")
+    let coption = document.querySelectorAll(".coption")
+
+    if(localStorage.getItem("active-selLink")){
+        for(let i=0; i<coption.length; i++){
+            if(coption[i].innerHTML == localStorage.getItem("active-selLink")){
+                changeactivelink(coption[i])
+            }
+        }
+    }
+
+    for(let i=0; i<coption.length;i++){
+        coption[i].addEventListener("click",function(){
+            changeactivelink(coption[i])
+        })
+    }
+
+    function changeactivelink(delop){
+        coption.forEach(ele => {
+            ele.classList.remove("cactive")
+        })
+        activeop.innerHTML = delop.innerHTML
+        delop.classList.add("cactive")
+        localStorage.setItem("active-selLink",delop.innerHTML)
+    }
+
+    document.addEventListener("click",function(event){
+        let isClciked = event.target
+
+        if(isClciked.classList.contains(dropini.classList)){
+            if(dropini.getAttribute("data-active") == '0'){
+                dropini.setAttribute("data-active","1")
+                dropdown.classList.remove("vanish")
+                dropini.classList.add("active-dropdown")
+                setTimeout(function(){
+                    dropdown.style.cssText = "visibility: visible; opacity: 1;"
+                },0)
+                return;
+            } else {
+                dropini.setAttribute("data-active","0")
+                dropdown.removeAttribute("style")
+                dropini.classList.remove("active-dropdown")
+                setTimeout(function(){
+                    dropdown.classList.add("vanish")
+                },400)
+            } return;
+        } else {
+            if(dropdown.hasAttribute("style")){
+                dropini.setAttribute("data-active","0")
+                dropdown.removeAttribute("style")
+                dropini.classList.remove("active-dropdown")
+                setTimeout(function(){
+                    dropdown.classList.add("vanish")
+                },400)
+            } else {
+                dropini.setAttribute("data-active","0")
+            }
+            return;
+        }
+    })
+}

@@ -1,4 +1,5 @@
-const callForPaperModel = require("../models/callForPaper.model")
+const callForPaperModel = require("../models/callForPaper.model");
+const steerCommMemModel = require("../models/steercommsmem.model");
 
 module.exports = {
     getHome: (req, res, next) => {
@@ -32,8 +33,10 @@ module.exports = {
         res.render("publication")
     },
 
-    getCommitte: (req, res, next) => {
-        res.render("committe")
+    getCommitte: async (req, res, next) => {
+        const sMemList = await steerCommMemModel
+        .find({})
+        res.render("committe",{steerMemList: sMemList});
     },
 
     getVenue: (req, res, next) => {
@@ -48,9 +51,22 @@ module.exports = {
         res.render("prev_conf")
     },
 
+    // Post Routes
+
     postPapersCallForPapers: (req, res, next) => {
         const paperSubHeading = req.body
         callForPaperModel.create( paperSubHeading, (err, data) => {
+            if(err){
+                res.status(500).send(err)
+            } else {
+                res.status(201).send(data)
+            }
+        })
+    },
+
+    postSteeringCommitteeMembers: (req, res, next) => {
+        const SterrMember = req.body
+        steerCommMemModel.create( SterrMember, (err, data) => {
             if(err){
                 res.status(500).send(err)
             } else {

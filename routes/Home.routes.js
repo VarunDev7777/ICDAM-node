@@ -14,7 +14,10 @@ Router.get('/committe', HomeControl.getCommitte);
 Router.get('/conference-venue', HomeControl.getVenue);
 Router.get('/downloads', HomeControl.getDownloads);
 Router.get('/previous-conference', HomeControl.getPreviousConference);
+
+// Post Routes
 Router.post('/papers/call-for-paper', HomeControl.postPapersCallForPapers);
+Router.post('/committe', HomeControl.postSteeringCommitteeMembers);
   
 
 module.exports = Router;
