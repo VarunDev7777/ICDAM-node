@@ -14,5 +14,24 @@
   font-family: "SourceSansPro-Black";
   src: url("/assets/fonts/SourceSansPro-Black.ttf");
 }
+.venue_container {
+  padding: 6rem 0 0 0;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.main_container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.main_container .section_heading {
+  margin: 0 auto;
+  padding-bottom: 0.2rem;
+  width: max-content;
+  border-bottom: 4px solid #005499;
+}
 
 /*# sourceMappingURL=venue.css.map */

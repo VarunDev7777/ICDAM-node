@@ -14,5 +14,45 @@
   font-family: "SourceSansPro-Black";
   src: url("/assets/fonts/SourceSansPro-Black.ttf");
 }
+.prev_conf_container {
+  padding: 7rem 0 0 0;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.main_container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.section_heading {
+  width: max-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.prev_conf_content {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: Inter;
+  width: 90%;
+  margin: 1rem auto 2rem auto;
+  text-align: justify;
+}
+
+.slick_container {
+  width: 90%;
+  margin: 0 auto;
+}
+.slick_container .slick_item img {
+  width: 30rem;
+  height: 20rem;
+}
 
 /*# sourceMappingURL=prev_conf.css.map */

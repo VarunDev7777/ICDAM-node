@@ -74,7 +74,7 @@
 
 .call_info {
   background-color: #fff;
-  padding: 1rem;
+  padding: 2rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-sizing: border-box;
@@ -177,7 +177,7 @@
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
   font-size: 1.1rem;
 }

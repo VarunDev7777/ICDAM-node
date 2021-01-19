@@ -1,5 +1,8 @@
 const callForPaperModel = require("../models/callForPaper.model");
 const steerCommMemModel = require("../models/steercommsmem.model");
+const advCommMemModel = require("../models/advisorycommmem.model");
+const techCommMemModel = require("../models/technicalprogramcommmem.model");
+const euroCommMemModel = require("../models/eurotechboard.model");
 
 module.exports = {
     getHome: (req, res, next) => {
@@ -36,7 +39,22 @@ module.exports = {
     getCommitte: async (req, res, next) => {
         const sMemList = await steerCommMemModel
         .find({})
-        res.render("committe",{steerMemList: sMemList});
+        .sort({$natural: 1});
+        const aMemList = await advCommMemModel
+        .find({})
+        .sort({$natural: 1});
+        const tMemList = await techCommMemModel
+        .find({})
+        .sort({$natural: 1});
+        const eMemList = await euroCommMemModel
+        .find({})
+        .sort({$natural: 1});
+        res.render("committe", {
+            steerMemList: sMemList,
+            advMemList: aMemList,
+            techMemList: tMemList,
+            euroMemList: eMemList
+        });
     },
 
     getVenue: (req, res, next) => {
@@ -67,6 +85,39 @@ module.exports = {
     postSteeringCommitteeMembers: (req, res, next) => {
         const SterrMember = req.body
         steerCommMemModel.create( SterrMember, (err, data) => {
+            if(err){
+                res.status(500).send(err)
+            } else {
+                res.status(201).send(data)
+            }
+        })
+    },
+
+    postAdvisoryCommitteeMembers: (req, res, next) => {
+        const AdvMember = req.body
+        advCommMemModel.create( AdvMember, (err, data) => {
+            if(err){
+                res.status(500).send(err)
+            } else {
+                res.status(201).send(data)
+            }
+        })
+    },
+
+    postTechinicalCommitteeMembers: (req, res, next) => {
+        const TechMember = req.body
+        techCommMemModel.create( TechMember, (err, data) => {
+            if(err){
+                res.status(500).send(err)
+            } else {
+                res.status(201).send(data)
+            }
+        })
+    },
+
+    postEuropeanCommitteeMembers: (req, res, next) => {
+        const EuroMember = req.body
+        euroCommMemModel.create( EuroMember, (err, data) => {
             if(err){
                 res.status(500).send(err)
             } else {

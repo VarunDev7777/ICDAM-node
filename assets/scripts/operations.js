@@ -195,28 +195,38 @@ if(pageparams == "committe"){
     let dropini = document.querySelector(".committee_page_options")
     let activeop = document.querySelector(".active_option")
     let coption = document.querySelectorAll(".coption")
+    let commcontainer = document.querySelectorAll(".comm_container")
+    let section_headings = document.querySelectorAll(".section_heading")
+    // console.log(section_headings[1].innerHTML.split(" ")[0])
 
     if(localStorage.getItem("active-selLink")){
         for(let i=0; i<coption.length; i++){
             if(coption[i].innerHTML == localStorage.getItem("active-selLink")){
-                changeactivelink(coption[i])
+                changeactivelink(coption[i],section_headings[i])
             }
         }
     }
 
     for(let i=0; i<coption.length;i++){
         coption[i].addEventListener("click",function(){
-            changeactivelink(coption[i])
+            changeactivelink(coption[i],section_headings[i])
         })
     }
 
-    function changeactivelink(delop){
+    function changeactivelink(delop,coplop){
         coption.forEach(ele => {
             ele.classList.remove("cactive")
         })
         activeop.innerHTML = delop.innerHTML
         delop.classList.add("cactive")
         localStorage.setItem("active-selLink",delop.innerHTML)
+        let parentEle = coplop.parentElement
+        commcontainer.forEach(ele => {
+            if(!ele.classList.contains("vanish")){
+                ele.classList.add("vanish")
+            }
+        })
+        parentEle.classList.remove("vanish")
     }
 
     document.addEventListener("click",function(event){
@@ -253,4 +263,15 @@ if(pageparams == "committe"){
             return;
         }
     })
+}
+
+// prev conf page
+if(pageparams == "previous-conference"){
+    $(".slick_container").slick({
+        dots: true,
+        speed: 500,
+        autoplay: true,
+        arrows: false,
+        slidesToShow: 3
+    });
 }

@@ -1,4 +1,7 @@
 @import '_config';
+$random1: random($limit: 256);
+$random2: random($limit: 256);
+$random3: random($limit: 256);
 
 .committee_container{
     min-height: 80vh;
@@ -45,6 +48,7 @@
         border-radius: 10px;
         overflow: hidden;
         transition: all 0.4s;
+        border: 1px solid #ccc;
 
         .coption{
             font-size: 1.4rem;
@@ -115,9 +119,116 @@
     width: max-content;
 }
 
-.steering_committee_container{
+// steercommitte
+
+.steering_committee_container,.advisory_committee_container
+,.european_tboard_container,.technical_committee_container{
     background-color: #fff;
     padding: 1rem 2rem;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.com_section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comlist_item{
+    height: 22rem;
+    width: max-content;
+    margin: 1rem .5rem;
+    position: relative;
+    border: 1px solid #00000029;
+    transition: 0.3s ease;
+
+    .profile_img{
+        width: min-content;
+        margin: 0 auto;
+        padding: 2rem 0;
+        img{
+            height: 15rem;
+            width: 24.5rem;
+        }
+    }
+
+    .comitem_info{
+        display: flex;
+        position: absolute;
+        border-top: 1px solid #00000029;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        bottom: 0;
+        font-family: SourceSansPro;
+        background-color: #005499;
+        color: #fff;
+        overflow: hidden;
+        transition: 0.3s ease;
+        
+        span{
+            transition: inherit;
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+
+    &:hover{
+        box-shadow: 0 0 5px 3px #00000029;
+        .comitem_info{
+            height: 6rem;
+            box-shadow: 0 0 5px 3px #00000029;
+
+            span{
+                text-align: center;
+                &:last-child{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// technical committe
+
+.main_techp_con,.main_adv_con,.main_euro_con{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .techp_item,.adv_item,.euro_item{
+        border-radius: 5px;
+        margin: .5rem 1rem;
+        font-size: 1.1rem;
+        width: 45%;
+        border: none;
+        padding: 1rem;
+
+        span{
+            margin-left: .5rem;
+        }
+
+        &:nth-child(2n){
+            background-color: #e9ecf1;
+        }
+        &:nth-child(2n+1){
+            background-color: #e1e1e1;
+        }
+    }
+
+    .techp_item,.euro_item{
+        height: 2.5rem;
+    }
+
+    .adv_item{
+        height: 4rem;
+    }
 }

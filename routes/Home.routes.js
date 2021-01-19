@@ -17,7 +17,10 @@ Router.get('/previous-conference', HomeControl.getPreviousConference);
 
 // Post Routes
 Router.post('/papers/call-for-paper', HomeControl.postPapersCallForPapers);
-Router.post('/committe', HomeControl.postSteeringCommitteeMembers);
+Router.post('/committe/steering-committee', HomeControl.postSteeringCommitteeMembers);
+Router.post('/committe/advisory-committee', HomeControl.postAdvisoryCommitteeMembers);
+Router.post('/committe/technical-program-committee', HomeControl.postTechinicalCommitteeMembers);
+Router.post('/committe/european-technical-committee', HomeControl.postEuropeanCommitteeMembers);
   
 
 module.exports = Router;

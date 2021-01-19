@@ -14,7 +14,35 @@
 <body>
     <%- include("./Components/header.ejs") %>
     <%- include("./Components/sidebar.ejs") %>
-    <div>Downloads</div>
+    <div class="download_container">
+        <h1 class="section_heading">Downloads</h1>
+        <div class="download_maincon">
+            <a href="/assets/downloads/Manuscript guidelines for English books.pdf" download>
+                <div class="down_content">
+                    <div class="img_con"><img src="/assets/images/svgs/reader-outline.svg"></div>
+                    <div class="download_title">Manu Script Guidelines</div>
+                </div>
+            </a>
+            <a href="/assets/downloads/Checklist.pdf" download>
+                <div class="down_content">
+                    <div class="img_con"><img src="/assets/images/svgs/reader-outline.svg"></div>
+                    <div class="download_title">Checklist</div>
+                </div>
+            </a>
+            <a href="/assets/downloads/Springer Word Template.zip" download>
+                <div class="down_content">
+                    <div class="img_con"><img src="/assets/images/svgs/reader-outline.svg"></div>
+                    <div class="download_title">Springer Word Template</div>
+                </div>
+            </a>
+            <a href="/assets/downloads/Springer LaTeX Template.zip" download>
+                <div class="down_content">
+                    <div class="img_con"><img src="/assets/images/svgs/reader-outline.svg"></div>
+                    <div class="download_title">Springer La Tex Template</div>
+                </div>
+            </a>
+        </div>
+    </div>
     <%- include("./Components/footer.ejs") %>
     <script src="/assets/scripts/operations.js"></script>
 </body>
