@@ -1,26 +1,37 @@
-const express = require('express');
+const express = require("express");
 const Router = express.Router();
 
-const HomeControl = require('../controllers/Home.controller');
+const HomeControl = require("../controllers/Home.controller");
 
-Router.get('/', HomeControl.getHome);
-Router.get('/about', HomeControl.getAbout);
-Router.get('/papers', HomeControl.getPapers);
-Router.get('/special-sessions', HomeControl.getSessions);
-Router.get('/registrations', HomeControl.getRegistration);
-Router.get('/sponsorship', HomeControl.getSponsorship);
-Router.get('/publication', HomeControl.getPublication);
-Router.get('/committe', HomeControl.getCommitte);
-Router.get('/conference-venue', HomeControl.getVenue);
-Router.get('/downloads', HomeControl.getDownloads);
-Router.get('/previous-conference', HomeControl.getPreviousConference);
+Router.get("/", HomeControl.getHome);
+Router.get("/about", HomeControl.getAbout);
+Router.get("/papers", HomeControl.getPapers);
+Router.get("/special-sessions", HomeControl.getSessions);
+Router.get("/registrations", HomeControl.getRegistration);
+Router.get("/sponsorship", HomeControl.getSponsorship);
+Router.get("/publication", HomeControl.getPublication);
+Router.get("/committe", HomeControl.getCommitte);
+Router.get("/conference-venue", HomeControl.getVenue);
+Router.get("/downloads", HomeControl.getDownloads);
+Router.get("/previous-conference", HomeControl.getPreviousConference);
 
 // Post Routes
-Router.post('/papers/call-for-paper', HomeControl.postPapersCallForPapers);
-Router.post('/committe/steering-committee', HomeControl.postSteeringCommitteeMembers);
-Router.post('/committe/advisory-committee', HomeControl.postAdvisoryCommitteeMembers);
-Router.post('/committe/technical-program-committee', HomeControl.postTechinicalCommitteeMembers);
-Router.post('/committe/european-technical-committee', HomeControl.postEuropeanCommitteeMembers);
-  
+Router.post("admin/papers/call-for-paper", HomeControl.postPapersCallForPapers);
+Router.post(
+  "admin/committe/steering-committee",
+  HomeControl.postSteeringCommitteeMembers
+);
+Router.post(
+  "admin/committe/advisory-committee",
+  HomeControl.postAdvisoryCommitteeMembers
+);
+Router.post(
+  "admin/committe/technical-program-committee",
+  HomeControl.postTechinicalCommitteeMembers
+);
+Router.post(
+  "admin/committe/european-technical-committee",
+  HomeControl.postEuropeanCommitteeMembers
+);
 
 module.exports = Router;

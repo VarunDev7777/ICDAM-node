@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
 .main_footer {
   background-color: #ffffff;
 }
@@ -16,10 +32,24 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+@media (max-width: 575px) {
+  .flexer {
+    flex-direction: column;
+    padding-bottom: 0;
+    align-items: center;
+  }
+}
 
 .d_flexer {
   display: flex;
   align-items: flex-start;
+}
+@media (max-width: 575px) {
+  .d_flexer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
 }
 
 .footer_logo {
@@ -27,6 +57,14 @@
 }
 .footer_logo img {
   width: 60%;
+}
+@media (max-width: 575px) {
+  .footer_logo {
+    width: 100%;
+  }
+  .footer_logo img {
+    width: 100%;
+  }
 }
 
 .quick_links h3 {
@@ -43,6 +81,7 @@
   position: relative;
   cursor: pointer;
   width: max-content;
+  user-select: none;
   margin: 0.5rem 0;
 }
 .quick_links ul li::after {
@@ -60,6 +99,16 @@
   width: 100%;
   left: 0;
   transition: all 0.4s;
+}
+@media (max-width: 575px) {
+  .quick_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quick_links h3 {
+    margin: 0 auto;
+  }
 }
 
 .mail_details {
@@ -82,6 +131,16 @@
   font-size: 32px;
   margin: 1rem 3rem 0 0;
 }
+@media (max-width: 575px) {
+  .mail_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mail_details h3 {
+    margin: 0 auto;
+  }
+}
 
 .social_accounts {
   margin-top: 0.5rem;
@@ -102,11 +161,26 @@
 .social_accounts div img:hover {
   animation: shake 0.5s forwards ease;
 }
+@media (max-width: 575px) {
+  .social_accounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social_accounts h3 {
+    margin: 0 auto;
+  }
+}
 
 .copyright {
   margin: 0 auto;
   width: max-content;
   padding: 1rem 0 1rem 0;
+}
+@media (max-width: 575px) {
+  .copyright {
+    width: auto;
+  }
 }
 
 @keyframes shake {
