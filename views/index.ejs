@@ -82,7 +82,7 @@
         </div>
 
         <div class="marquee_section">
-            <div class="downloads_marquee marquee_list">
+            <div class="downloads_marquee marquee_list" id="downloads">
                 <div class="marquee_headline">Downloads</div>
                 <div class="item-list">
                     <div class="itemdlist">
@@ -99,7 +99,7 @@
                         <span><img src="/assets/images/svgs/download-outline.svg" alt=""></span></div>
                 </div>
             </div>
-            <div class="impdates_marquee marquee_list">
+            <div class="impdates_marquee marquee_list" id="impdates">
                 <div class="marquee_headline">Important Dates</div>
                 <div class="item-list">
                     <div class="itemilist">
@@ -150,6 +150,8 @@
 
     <%- include("./Components/footer.ejs") %>
     </div>
+    <script src="/assets/scripts/jquery.js"></script>
     <script src="/assets/scripts/operations.js"></script>
+    <script src="/assets/scripts/smoothscroll.js"></script>
 </body>
 </html>

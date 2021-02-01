@@ -45,6 +45,12 @@
   width: 40px;
   height: 40px;
 }
+@media (max-width: 575px) {
+  .sidebar_container .toggle_sidebar_close img {
+    height: 25px;
+    width: 25px;
+  }
+}
 .sidebar_container .toggle_sidebar_close:hover {
   right: 15.5rem;
   padding: 0 1rem;
@@ -116,6 +122,14 @@
 .link_container ul li:hover::after {
   height: 100%;
   top: 0;
+}
+@media (max-width: 575px) {
+  .link_container ul li {
+    height: auto;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=sidebar.css.map */
