@@ -21,6 +21,13 @@
   width: 90%;
   margin: 2rem auto;
 }
+@media (max-width: 575px) {
+  .venue_container {
+    padding: 0;
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
 
 .main_container {
   background-color: #ffffff;
@@ -34,6 +41,14 @@
   padding-bottom: 0.2rem;
   width: max-content;
   border-bottom: 4px solid #005499;
+}
+@media (max-width: 575px) {
+  .main_container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
 }
 
 /*# sourceMappingURL=venue.css.map */

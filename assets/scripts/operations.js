@@ -291,5 +291,14 @@ if (pageparams == "previous-conference") {
     autoplay: true,
     arrows: false,
     slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        },
+      },
+    ],
   });
 }

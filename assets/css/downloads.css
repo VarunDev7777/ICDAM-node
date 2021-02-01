@@ -22,12 +22,24 @@
   margin: 0 auto;
   width: 90%;
 }
+@media (max-width: 575px) {
+  .download_container {
+    padding: 0;
+    width: 100%;
+  }
+}
 
 .section_heading {
   font-size: 3rem;
   padding-bottom: 0.5rem;
   width: max-content;
   border-bottom: 3px solid #005499;
+}
+@media (max-width: 575px) {
+  .section_heading {
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
 }
 
 .download_maincon {
@@ -83,6 +95,15 @@
 .download_maincon a:nth-child(4) .img_con img {
   filter: invert(63%) sepia(14%) saturate(3402%) hue-rotate(1deg) brightness(105%) contrast(103%);
 }
+.download_maincon a:nth-child(5)::after {
+  background-color: #e60026;
+}
+.download_maincon a:nth-child(5) .img_con {
+  background-color: #e6002660;
+}
+.download_maincon a:nth-child(5) .img_con img {
+  filter: invert(14%) sepia(99%) saturate(6822%) hue-rotate(346deg) brightness(88%) contrast(107%);
+}
 .download_maincon a::after {
   position: absolute;
   content: "Download";
@@ -99,6 +120,13 @@
   opacity: 0;
   transition: 0.3s ease;
 }
+@media (max-width: 575px) {
+  .download_maincon a::after {
+    height: auto;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+}
 .download_maincon a:hover::after {
   width: 100%;
   opacity: 1;
@@ -110,6 +138,13 @@
 }
 .download_maincon a:hover .img_con img {
   transform: translateY(-20px) rotate(-20deg);
+}
+@media (max-width: 575px) {
+  .download_maincon a {
+    width: 90vw;
+    height: auto;
+    margin: 1rem 0;
+  }
 }
 .download_maincon .down_content .img_con {
   height: 20rem;
@@ -133,6 +168,22 @@
   justify-content: center;
   overflow: hidden;
   align-items: center;
+}
+@media (max-width: 575px) {
+  .download_maincon .download_title {
+    height: auto;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width: 575px) {
+  .download_maincon {
+    border-radius: 0;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=downloads.css.map */
