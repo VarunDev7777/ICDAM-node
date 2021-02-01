@@ -9,6 +9,8 @@
 @font-face {
   font-family: "SourceSansPro";
   src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: "SourceSansPro-Black";
@@ -40,6 +42,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
   align-items: center;
   border-right: 2px solid #ececec;
   position: relative;
@@ -70,6 +73,17 @@
   transform: scale(1);
   border-radius: 0;
 }
+@media (max-width: 575px) {
+  .about_toggle .about_uni::before {
+    height: 0;
+    width: 20rem;
+  }
+  .about_toggle .about_uni:hover::before {
+    height: 20rem;
+    width: 20rem;
+    transform: scale(1);
+  }
+}
 .about_toggle .activeitem::after {
   position: absolute;
   content: "";
@@ -81,12 +95,41 @@
   z-index: 5;
   background-color: #005499;
 }
+@media (max-width: 575px) {
+  .about_toggle .activeitem {
+    color: #fff;
+  }
+  .about_toggle .activeitem::before {
+    height: 50rem;
+    transform: scale(1);
+    border-radius: 0;
+  }
+  .about_toggle .activeitem::after {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .about_toggle {
+    flex-direction: column;
+    margin: 0rem auto 0 auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .about_toggle .about_uni {
+    font-size: 1rem;
+    border-right: 0;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
 
 .inactiveabitem {
   display: none;
 }
 
-.about_JanWyzykowski, .about_uniinov, .about_pietuni {
+.about_JanWyzykowski,
+.about_uniinov,
+.about_pietuni {
   width: 80%;
   padding: 1rem;
   border-top: 1px solid #ececec;
@@ -98,13 +141,29 @@
   line-height: 3rem;
   text-align: justify;
 }
+@media (max-width: 575px) {
+  .about_JanWyzykowski,
+.about_uniinov,
+.about_pietuni {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 .about_headline {
-  position: absolute;
-  right: 11%;
-  top: -18%;
   font-size: 4rem;
   color: #005499;
+  width: max-content;
+  position: absolute;
+  right: 200px;
+  top: -130px;
+}
+@media (max-width: 575px) {
+  .about_headline {
+    position: static;
+    margin: 1rem auto;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

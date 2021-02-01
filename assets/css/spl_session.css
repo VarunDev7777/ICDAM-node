@@ -9,6 +9,8 @@
 @font-face {
   font-family: "SourceSansPro";
   src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: "SourceSansPro-Black";
@@ -20,6 +22,12 @@
   flex-direction: column;
   padding-top: 8rem;
   box-sizing: border-box;
+}
+@media (max-width: 575px) {
+  .special_session_container {
+    padding-top: 0;
+    min-height: max-content;
+  }
 }
 
 .no-sessions {
@@ -34,6 +42,13 @@
   font-size: 48px;
   font-family: Raleway;
   font-weight: bold;
+}
+@media (max-width: 575px) {
+  .no-sessions {
+    margin: 2rem auto;
+    font-size: 1rem;
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=spl_session.css.map */

@@ -9,6 +9,8 @@
 @font-face {
   font-family: "SourceSansPro";
   src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: "SourceSansPro-Black";
@@ -41,6 +43,14 @@
   flex-wrap: wrap;
   margin: 0 auto 6rem auto;
 }
+@media (max-width: 575px) {
+  .publication_container .journal_container {
+    padding: 1rem;
+    flex-direction: column;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
 .publication_container .journal {
   box-shadow: 0 0 3px 3px #00000029;
   min-width: 25rem;
@@ -66,6 +76,11 @@
 }
 .publication_container .journal .journal-image:hover img {
   transform: scale(0.9);
+}
+@media (max-width: 575px) {
+  .publication_container .journal .journal-image {
+    height: auto;
+  }
 }
 .publication_container .journal .journal-title {
   text-align: center;
@@ -117,6 +132,19 @@
   color: #005499;
   font-weight: bold;
   font-family: SourceSansPro;
+}
+@media (max-width: 575px) {
+  .publication_container .journal {
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 575px) {
+  .publication_container {
+    padding: 0;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=publication.css.map */

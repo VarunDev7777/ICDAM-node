@@ -9,6 +9,8 @@
 @font-face {
   font-family: "SourceSansPro";
   src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: "SourceSansPro-Black";
@@ -100,12 +102,14 @@
   line-height: 1.2rem;
 }
 
-.sidebar_toggler {
+.sidebar_toggler,
+.sidebar_toggler-mobile {
   height: min-content;
   cursor: pointer;
   width: min-content;
 }
-.sidebar_toggler .ham {
+.sidebar_toggler .ham,
+.sidebar_toggler-mobile .ham {
   height: 4px;
   background-color: #000000;
   border-radius: 16px;
@@ -113,16 +117,20 @@
   margin-top: 4px;
   transition: all 0.4s;
 }
-.sidebar_toggler .ham:nth-child(3) {
+.sidebar_toggler .ham:nth-child(3),
+.sidebar_toggler-mobile .ham:nth-child(3) {
   width: 1.6rem;
 }
-.sidebar_toggler .ham:nth-child(2) {
+.sidebar_toggler .ham:nth-child(2),
+.sidebar_toggler-mobile .ham:nth-child(2) {
   width: 2rem;
 }
-.sidebar_toggler .ham:nth-child(1) {
+.sidebar_toggler .ham:nth-child(1),
+.sidebar_toggler-mobile .ham:nth-child(1) {
   width: 2.4rem;
 }
-.sidebar_toggler:hover .ham {
+.sidebar_toggler:hover .ham,
+.sidebar_toggler-mobile:hover .ham {
   width: 2.4rem;
 }
 
