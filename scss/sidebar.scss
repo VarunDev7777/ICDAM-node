@@ -1,14 +1,22 @@
 @import "_config";
 .sidebar_container {
   position: fixed;
-  right: -25rem;
+  right: 0;
+  -ms-transform: translateX(105%);
+  -o-transform: translateX(105%);
+  -moz-transform: translateX(105%);
+  -webkit-transform: translateX(105%);
+  transform: translateX(105%);
   top: 0;
   bottom: 0;
   z-index: 10;
   background-color: #fff;
   box-sizing: border-box;
   display: flex;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
   transition: 0.7s ease;
+  -o-transition: 0.7s ease;
   width: 20rem;
   flex-direction: column;
   box-shadow: 0 0 5px 3px #00000029;
@@ -18,7 +26,10 @@
   .toggle_sidebar_close {
     width: min-content;
     height: min-content;
-    transition: 0.3s;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     cursor: pointer;
     position: absolute;
     top: 5rem;
@@ -52,7 +63,7 @@
   }
   @include media("<=xs") {
     width: 100vw;
-    right: calc(-100vw - 5rem);
+    right: 0;
   }
 }
 
@@ -76,7 +87,10 @@
     li {
       list-style: none;
       height: 1.5rem;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
       transition: 0.3s ease;
+      -o-transition: 0.3s ease;
       text-transform: capitalize;
       font-size: 20px;
       padding: 1rem 2rem;
@@ -90,7 +104,10 @@
         bottom: 0;
         height: 0;
         width: 5px;
+        -webkit-transition: height 0.4s;
+        -moz-transition: height 0.4s;
         transition: height 0.4s;
+        -o-transition: height 0.4s;
         border: none;
         background-color: #005499;
       }

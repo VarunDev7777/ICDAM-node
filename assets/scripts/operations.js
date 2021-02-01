@@ -3,8 +3,12 @@ let toggle_forward = document.querySelector(".sidebar_toggler");
 let toggle_forward_mobile = document.querySelector(".sidebar_toggler-mobile");
 let toggle_back = document.querySelector(".toggle_sidebar_close");
 let sidebar = document.querySelector(".sidebar_container");
-toggle_forward.onclick = () => (sidebar.style.right = 0);
-toggle_forward_mobile.onclick = () => (sidebar.style.right = 0);
+toggle_forward.onclick = () =>
+  (sidebar.style.cssText =
+    "-ms-transform: translateX(0%);-o-transform: translateX(0%);-moz-transform: translateX(0%);-webkit-transform: translateX(0%);transform: translateX(0%);");
+toggle_forward_mobile.onclick = () =>
+  (sidebar.style.cssText =
+    "-ms-transform: translateX(0%);-o-transform: translateX(0%);-moz-transform: translateX(0%);-webkit-transform: translateX(0%);transform: translateX(0%);");
 toggle_back.onclick = () => sidebar.removeAttribute("style");
 
 let pageparams = window.location.pathname;
@@ -57,11 +61,10 @@ function changeactivelink(link) {
 
 // slider
 if (pageparams == "") {
-  let slider_con = document.querySelector(".slider_component");
-  let carousel_items = [...slider_con.children];
-
   function changeactiveItem() {
     let activeobj;
+    let slider_con = document.querySelector(".slider_component");
+    let carousel_items = [...slider_con.children];
     for (let i = 0; i < carousel_items.length; i++) {
       if (carousel_items[i].classList.contains("active-citem")) {
         activeobj = carousel_items[i];
@@ -103,12 +106,11 @@ if (pageparams == "") {
 
 // about section
 if (pageparams == "about") {
-  let togglers = document.querySelectorAll(".about_uni");
-  let aboutJan = document.querySelector(".about_JanWyzykowski");
-  let aboutUni = document.querySelector(".about_uniinov");
-  let aboutPeitUni = document.querySelector(".about_pietuni");
-
   function changeabout(num) {
+    let togglers = document.querySelectorAll(".about_uni");
+    let aboutJan = document.querySelector(".about_JanWyzykowski");
+    let aboutUni = document.querySelector(".about_uniinov");
+    let aboutPeitUni = document.querySelector(".about_pietuni");
     togglers.forEach((ele) => {
       ele.classList.remove("activeitem");
     });
@@ -169,10 +171,12 @@ if (pageparams == "papers") {
   }
 
   function changepapers(selop) {
-    poption.forEach((ele) => {
+    let poptionscoped = document.querySelectorAll(".poption");
+    let paper_datascoped = document.querySelectorAll(".paper_data");
+    poptionscoped.forEach((ele) => {
       ele.classList.remove("pactive");
     });
-    paper_data.forEach((ele) => {
+    paper_datascoped.forEach((ele) => {
       ele.classList.add("data-inactive");
     });
     selop.classList.add("pactive");
@@ -231,14 +235,17 @@ if (pageparams == "committe") {
   }
 
   function changeactivelinkcom(delop, coplop) {
-    coption.forEach((ele) => {
+    let coptionscoped = document.querySelectorAll(".coption");
+    let activeopscoped = document.querySelector(".active_option");
+    let commcontainerscoped = document.querySelectorAll(".comm_container");
+    coptionscoped.forEach((ele) => {
       ele.classList.remove("cactive");
     });
-    activeop.innerHTML = delop.innerHTML;
+    activeopscoped.innerHTML = delop.innerHTML;
     delop.classList.add("cactive");
     localStorage.setItem("active-selLink", delop.innerHTML);
     let parentEle = coplop.parentElement;
-    commcontainer.forEach((ele) => {
+    commcontainerscoped.forEach((ele) => {
       if (!ele.classList.contains("vanish")) {
         ele.classList.add("vanish");
       }
