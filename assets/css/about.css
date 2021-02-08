@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: "Inter";
@@ -129,7 +129,8 @@
 
 .about_JanWyzykowski,
 .about_uniinov,
-.about_pietuni {
+.about_pietuni,
+.about_iisdtbu {
   width: 80%;
   padding: 1rem;
   border-top: 1px solid #ececec;
@@ -144,7 +145,8 @@
 @media (max-width: 575px) {
   .about_JanWyzykowski,
 .about_uniinov,
-.about_pietuni {
+.about_pietuni,
+.about_iisdtbu {
     width: 100%;
     font-size: 14px;
     line-height: 20px;

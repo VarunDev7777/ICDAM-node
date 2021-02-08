@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
@@ -30,6 +30,7 @@ $screen-lg: "only screen and (max-width: 1199px)";
 $screen-md: "only screen and (max-width: 991px)";
 $screen-sm: "only screen and (max-width: 767px)";
 $screen-xs: "only screen and (max-width: 575px)";
+$screen-landscape: "only screen and (orientation: landscape)";
 
 $breakpoints: (
   xxl: 1900px,
@@ -38,4 +39,5 @@ $breakpoints: (
   md: 991px,
   sm: 767px,
   xs: 575px,
+  landscape: "landscape",
 );

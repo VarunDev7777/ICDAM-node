@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: "Inter";
@@ -113,7 +113,7 @@
   text-transform: capitalize;
   font-size: 20px;
   padding: 1rem 2rem;
-  font-family: Raleway;
+  font-family: "Raleway-Regular";
   position: relative;
 }
 .link_container ul li::after {

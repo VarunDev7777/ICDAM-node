@@ -8,14 +8,14 @@
     margin: 0 auto;
     display: flex;
     place-content: space-between;
-    place-items: center;
     position: relative;
+    padding: 2rem 0;
   }
 
   .row {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -39,10 +39,11 @@
 }
 
 .logo_space {
-  width: 10rem;
+  width: 18rem;
 }
 
 .logo_container {
+  flex-direction: column;
   box-shadow: 0 0 10px 3px #00000029;
   border-top: none;
   display: flex;
@@ -52,12 +53,19 @@
   position: absolute;
   top: 0;
   background-color: #ffffff;
-  height: 12rem;
+  height: 15rem;
   justify-content: center;
   align-items: center;
   img {
     height: auto;
     width: 80%;
+    &:nth-child(2) {
+      width: 60%;
+      margin-top: 1rem;
+      @include media("<=xs") {
+        margin-top: 8px;
+      }
+    }
   }
 
   @include media("<=xl") {
@@ -78,11 +86,12 @@
 
 .title_container {
   h4 {
-    font-family: Raleway;
+    font-family: "Raleway-Regular";
     text-align: center;
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 1.2rem;
+    margin: 0 9rem;
   }
 }
 
@@ -91,6 +100,7 @@
   height: min-content;
   cursor: pointer;
   width: min-content;
+  margin-top: 1rem;
   .ham {
     height: 4px;
     background-color: #000000;

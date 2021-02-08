@@ -13,6 +13,7 @@
     <link rel="icon" href="/assets/images/gurunanak.png">
 </head>
 <body>
+    <%- include("./Components/loader.ejs") %>
     <%- include("./Components/header.ejs") %>
     <%- include("./Components/sidebar.ejs") %>
     <div class="about_component">
@@ -21,6 +22,7 @@
             <div class="about_uni activeitem" onclick="changeabout(1)">Jan Wyzykowski University</div>
             <div class="about_uni" onclick="changeabout(2)">PIET University</div>
             <div class="about_uni" onclick="changeabout(3)">Universal Innovators</div>
+            <div class="about_uni" onclick="changeabout(4)">IIS Jaipur</div>
         </div>
         <div class="about_JanWyzykowski activeabitem">
             Jan Wyżykowski University was created due to the cooperation of Polkowice Commune and Polkowice County. The founder of the University is the ZAMPOL company, which Polkowice Commune and Polkowice County own all the shares of. On 30th August 2001, the Founder received the permit to establish non-state high vocational school from the Minister of National Education and Sport.
@@ -56,6 +58,11 @@
             When we look at some option of best engineering Institute in National Capital Region, PIET stands out of a clear leader. A Multidisciplinary institute affiliated to kurukshetra university, Kurukshetra approved by AICTE, New Delhi provides Undergraduate programs in Engineering and Management. PIET has consistently pushed the war of excellence to garner riche for itself among the Ten Engineering institute in Delhi/NCR in the field of Engineering Education.
             It has focus on its goal of producing Entrepreneurs, world class Manager and technocrats employable throughout the globe. The institute has one of the largest student populations among engineering colleges of NCR. PIET is the most preferred destination for the students from across the country which could be attributed to the quality of education, infrastructure, healthy teaching Learning practices as well as producing industry ready students.
             PIET is a family of aspiring students supportive parents, committed faculty and visionary Management who all are working together to make a difference in education field.
+        </div>
+        <div class="about_iisdtbu inactiveabitem">
+            IIS (Deemed to be University), Jaipur (India) is among the pioneers in the state of Rajasthan in imparting quality education to women in different streams.  It is known for excellence in delivering value-based education to students and encourages them to think innovatively. It particularly focuses on preparing students to become world-ready citizens, who are equipped to take any professional and social challenges with an educated and empowered mind. 
+            The University is an exceptionally cosmopolitan and vibrant one based in one of the country’s most exciting and ethnically rich cities - the Pink City (Jaipur) and is placed in the category ‘A’ by the Ministry of Human Resource Development, Government of India. With over 5500 students, the University offers UG, PG and Doctoral programmes in Arts, Science, Social Sciences, Commerce, Management and Computer Science & IT.
+            Our vision includes striving and seeking to cater to global educational needs combined with our goal of promoting international understanding and world fellowship through world class education. To accomplish the same, we are open to all kinds of collaborations, by partnering with foreign universities and research based institutes.
         </div>
     </div>
     <%- include("./Components/footer.ejs") %>

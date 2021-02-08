@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: "Inter";
@@ -26,13 +26,13 @@
   margin: 0 auto;
   display: flex;
   place-content: space-between;
-  place-items: center;
   position: relative;
+  padding: 2rem 0;
 }
 .main_header .row {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 @media (max-width: 575px) {
@@ -55,10 +55,11 @@
 }
 
 .logo_space {
-  width: 10rem;
+  width: 18rem;
 }
 
 .logo_container {
+  flex-direction: column;
   box-shadow: 0 0 10px 3px #00000029;
   border-top: none;
   display: flex;
@@ -68,13 +69,22 @@
   position: absolute;
   top: 0;
   background-color: #ffffff;
-  height: 12rem;
+  height: 15rem;
   justify-content: center;
   align-items: center;
 }
 .logo_container img {
   height: auto;
   width: 80%;
+}
+.logo_container img:nth-child(2) {
+  width: 60%;
+  margin-top: 1rem;
+}
+@media (max-width: 575px) {
+  .logo_container img:nth-child(2) {
+    margin-top: 8px;
+  }
 }
 @media (max-width: 1500px) {
   .logo_container {
@@ -95,11 +105,12 @@
 }
 
 .title_container h4 {
-  font-family: Raleway;
+  font-family: "Raleway-Regular";
   text-align: center;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.2rem;
+  margin: 0 9rem;
 }
 
 .sidebar_toggler,
@@ -107,6 +118,7 @@
   height: min-content;
   cursor: pointer;
   width: min-content;
+  margin-top: 1rem;
 }
 .sidebar_toggler .ham,
 .sidebar_toggler-mobile .ham {

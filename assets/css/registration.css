@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: "Inter";
@@ -240,7 +240,7 @@
   color: #005499;
   position: relative;
   font-size: 2em;
-  font-family: Raleway;
+  font-family: "Raleway-Regular";
 }
 .ml6 .text-wrapper {
   position: relative;
