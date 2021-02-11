@@ -4,11 +4,14 @@ const app = express();
 //Connecting MongoDB
 const mongoose = require("mongoose");
 // mongodb://localhost:27017/icdamv_2
-mongoose.connect("mongodb+srv://icdam:icdam_2.0@icdamv.hiyrd.mongodb.net/icdam_2", {
-  useNewUrlParser: !0,
-  useUnifiedTopology: !0,
-  useCreateIndex: 1,
-});
+mongoose.connect(
+  "mongodb+srv://icdam:icdam_2.0@icdamv.hiyrd.mongodb.net/icdam_2",
+  {
+    useNewUrlParser: !0,
+    useUnifiedTopology: !0,
+    useCreateIndex: 1,
+  }
+);
 
 //View Engine & Static File Routing
 app.set("view engine", "ejs");

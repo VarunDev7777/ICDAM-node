@@ -15,22 +15,29 @@ Router.get("/conference-venue", HomeControl.getVenue);
 Router.get("/downloads", HomeControl.getDownloads);
 Router.get("/previous-conference", HomeControl.getPreviousConference);
 
+// admin routes
+Router.get("/admin", HomeControl.getadmin);
+Router.get("/admin/committee", HomeControl.getadmincomm);
+
 // Post Routes
-Router.post("admin/papers/call-for-paper", HomeControl.postPapersCallForPapers);
 Router.post(
-  "admin/committe/steering-committee",
+  "/admin/papers/call-for-paper",
+  HomeControl.postPapersCallForPapers
+);
+Router.post(
+  "/admin/committe/steering-committee",
   HomeControl.postSteeringCommitteeMembers
 );
 Router.post(
-  "admin/committe/advisory-committee",
+  "/admin/committe/advisory-committee",
   HomeControl.postAdvisoryCommitteeMembers
 );
 Router.post(
-  "admin/committe/technical-program-committee",
+  "/admin/committe/technical-program-committee",
   HomeControl.postTechinicalCommitteeMembers
 );
 Router.post(
-  "admin/committe/european-technical-committee",
+  "/admin/committe/european-technical-committee",
   HomeControl.postEuropeanCommitteeMembers
 );
 
