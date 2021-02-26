@@ -7,7 +7,7 @@
   width: 90%;
   margin: 0 auto;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     padding: 2rem 0;
     width: 100%;
   }
@@ -27,7 +27,7 @@
     padding-bottom: 1rem;
     width: max-content;
 
-    @include media("<=xs") {
+    @include media("<=sm") {
       width: auto;
     }
   }
@@ -38,7 +38,7 @@
     text-align: justify;
     line-height: 2rem;
     box-sizing: border-box;
-    @include media("<=xs") {
+    @include media("<=sm") {
       line-height: 1.4rem;
     }
   }
@@ -82,7 +82,7 @@
           padding: 1rem;
           box-sizing: border-box;
           font-family: Inter;
-          @include media("<=xs") {
+          @include media("<=sm") {
             padding: 0.5rem;
           }
         }
@@ -98,7 +98,7 @@
           background-color: #e1e1e140;
         }
 
-        @include media("<=xs") {
+        @include media("<=sm") {
           flex-direction: column;
           .detail_name {
             border-right: 0;
@@ -106,15 +106,15 @@
           }
         }
       }
-      @include media("<=xs") {
+      @include media("<=sm") {
         margin: 1rem auto;
       }
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       border-width: 1px;
     }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     padding: 1rem;
     border-radius: 0;
   }
@@ -123,7 +123,7 @@
 .head_center {
   width: max-content;
   margin: 2rem auto;
-  @include media("<=xs") {
+  @include media("<=sm") {
     font-size: 1.4rem;
     width: auto;
   }
@@ -165,7 +165,7 @@
           border-right: 3px solid #e1e1e1;
           width: 33%;
 
-          @include media("<=xs") {
+          @include media("<=sm") {
             border-right: none;
             width: 100%;
           }
@@ -178,7 +178,7 @@
         &:hover {
           background-color: #e1e1e140;
         }
-        @include media("<=xs") {
+        @include media("<=sm") {
           &:first-child {
             div {
               &:first-child {
@@ -216,7 +216,7 @@
         }
       }
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       border-width: 1px;
       ul {
         li {
@@ -249,7 +249,7 @@
     display: inline-block;
   }
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: auto;
     font-size: 1em;
   }

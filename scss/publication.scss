@@ -28,11 +28,16 @@
     flex-wrap: wrap;
     margin: 0 auto 6rem auto;
 
-    @include media("<=xs") {
+    @include media("<=sm") {
       padding: 1rem;
       flex-direction: column;
       max-width: 100%;
       border-radius: 0;
+    }
+    @include media("<=sm",">xs"){
+      width: 100vw;
+      flex-wrap: wrap;
+      flex-direction: unset;
     }
   }
 
@@ -63,7 +68,7 @@
           transform: scale(0.9);
         }
       }
-      @include media("<=xs") {
+      @include media("<=sm") {
         height: auto;
       }
     }
@@ -122,13 +127,18 @@
       font-weight: bold;
       font-family: SourceSansPro;
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       min-width: 90vw;
       max-width: 90vw;
       margin: 1rem 0;
     }
+    @include media("<=sm",">xs"){
+      max-width: 45vw;
+      min-width: 45vw;
+      margin: 1rem 0.6rem;
+    }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     padding: 0;
     max-width: 100%;
   }

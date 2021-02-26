@@ -34,7 +34,7 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .flexer {
     flex-direction: column;
     padding-bottom: 0;
@@ -46,7 +46,7 @@
   display: flex;
   align-items: flex-start;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .d_flexer {
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@
   width: 50%;
   margin-top: 1rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .footer_logo {
     width: 100%;
   }
@@ -110,7 +110,7 @@
   left: 0;
   transition: all 0.4s;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .quick_links {
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@
   font-size: 32px;
   margin: 1rem 3rem 0 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .mail_details {
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@
 .social_accounts div img:hover {
   animation: shake 0.5s forwards ease;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .social_accounts {
     display: flex;
     flex-direction: column;
@@ -187,7 +187,7 @@
   width: max-content;
   padding: 1rem 0 1rem 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .copyright {
     width: auto;
   }

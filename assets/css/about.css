@@ -73,7 +73,7 @@
   transform: scale(1);
   border-radius: 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about_toggle .about_uni::before {
     height: 0;
     width: 20rem;
@@ -95,7 +95,7 @@
   z-index: 5;
   background-color: #005499;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about_toggle .activeitem {
     color: #fff;
   }
@@ -108,7 +108,7 @@
     display: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about_toggle {
     flex-direction: column;
     margin: 0rem auto 0 auto;
@@ -142,7 +142,7 @@
   line-height: 3rem;
   text-align: justify;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about_JanWyzykowski,
 .about_uniinov,
 .about_pietuni,
@@ -161,7 +161,7 @@
   right: 200px;
   top: -130px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about_headline {
     position: static;
     margin: 1rem auto;

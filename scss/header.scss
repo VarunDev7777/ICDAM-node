@@ -20,14 +20,14 @@
   }
 
   .mode-desktop {
-    @include media("<=xs") {
+    @include media("<=sm") {
       display: none;
     }
   }
 
   .mode-mobile {
     display: none;
-    @include media("<=xs") {
+    @include media("<=sm") {
       display: flex;
       width: 100%;
       padding: 0 1rem;
@@ -62,7 +62,7 @@
     &:nth-child(2) {
       width: 60%;
       margin-top: 1rem;
-      @include media("<=xs") {
+      @include media("<=sm") {
         margin-top: 8px;
       }
     }
@@ -72,7 +72,7 @@
     position: relative;
   }
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     position: static;
     box-shadow: none;
     height: max-content;

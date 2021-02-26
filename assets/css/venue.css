@@ -21,7 +21,7 @@
   width: 90%;
   margin: 2rem auto;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .venue_container {
     padding: 0;
     margin: 2rem 0;
@@ -42,7 +42,7 @@
   width: max-content;
   border-bottom: 4px solid #005499;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_container {
     width: 100%;
     padding: 1rem;

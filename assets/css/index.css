@@ -70,7 +70,7 @@
   transform: scale(1);
   opacity: 1;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .slider_component {
     height: auto;
     min-height: 300px;
@@ -84,6 +84,11 @@
     height: auto;
     width: auto;
     max-width: 100%;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  .slider_component {
+    min-height: 500px;
   }
 }
 
@@ -134,7 +139,7 @@
   transition: 0.4s ease;
   width: 100%;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about_conf {
     padding: 1rem;
     box-sizing: border-box;
@@ -183,7 +188,7 @@
 .marquee_section .marquee_list:hover .item-list {
   animation-play-state: paused;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .marquee_section .marquee_list {
     width: 100%;
     padding: 0;
@@ -206,7 +211,7 @@
   border-bottom: 1px solid #ececec;
   background-color: #231834;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .marquee_section .marquee_headline {
     position: static;
     padding: 0.5rem 1rem;
@@ -215,7 +220,7 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .marquee_section {
     flex-direction: column;
     padding: 0;
@@ -241,7 +246,7 @@
 .item-list div:nth-child(2n) {
   background-color: #000000;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .item-list div {
     font-size: 1rem;
   }
@@ -282,7 +287,7 @@
 .notices_marquee .item-list {
   animation: marqueeanim 18s infinite linear;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .notices_marquee .item-list {
     animation-duration: 16s;
   }
@@ -338,7 +343,7 @@
   bottom: 0;
   left: 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner_container .partner_box span {
     font-size: 1rem;
   }
@@ -346,7 +351,7 @@
 .partner_container .partner_box:hover img {
   transform: scale(1.05);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .partner_container .partner_box {
     min-width: unset;
     max-height: unset;
@@ -359,7 +364,12 @@
     width: 90vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) and (min-width: 576px) {
+  .partner_container .partner_box img {
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
   .partner_container {
     flex-direction: column;
     padding: 0.5rem;
@@ -382,7 +392,7 @@
   font-size: 4rem;
   text-align: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .pro-partners {
     padding: 0;
     font-size: 1.8rem;

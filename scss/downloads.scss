@@ -6,7 +6,7 @@
   margin: 0 auto;
   width: 90%;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     padding: 0;
     width: 100%;
   }
@@ -17,7 +17,7 @@
   padding-bottom: 0.5rem;
   width: max-content;
   border-bottom: 3px solid #005499;
-  @include media("<=xs") {
+  @include media("<=sm") {
     box-sizing: border-box;
     margin: 1rem auto;
   }
@@ -120,7 +120,7 @@
       width: 0;
       opacity: 0;
       transition: 0.3s ease;
-      @include media("<=xs") {
+      @include media("<=sm") {
         height: auto;
         font-size: 1.2rem;
         padding: 0.5rem 0;
@@ -145,7 +145,7 @@
         }
       }
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       width: 90vw;
       height: auto;
       margin: 1rem 0;
@@ -177,7 +177,7 @@
     justify-content: center;
     overflow: hidden;
     align-items: center;
-    @include media("<=xs") {
+    @include media("<=sm") {
       height: auto;
       font-size: 1.2rem;
       justify-content: center;
@@ -186,7 +186,7 @@
       padding: 0.5rem 0;
     }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     border-radius: 0;
     flex-direction: column;
   }

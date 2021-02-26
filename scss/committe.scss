@@ -16,7 +16,7 @@ $random3: random(
   position: relative;
   width: 90%;
   margin: 0 auto;
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: 100%;
   }
 }
@@ -46,7 +46,7 @@ $random3: random(
     padding: 0.5rem 1.5rem;
     pointer-events: none;
 
-    @include media("<=xs") {
+    @include media("<=sm") {
       font-size: 1.1rem;
     }
   }
@@ -114,7 +114,7 @@ $random3: random(
       transition: all 0.4s;
     }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: 300px;
     right: 0;
     left: 0;
@@ -138,7 +138,7 @@ $random3: random(
   border-bottom: 3px solid #005499;
   width: max-content;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     font-size: 1.4rem;
     width: auto;
   }
@@ -155,7 +155,7 @@ $random3: random(
   box-sizing: border-box;
   border-radius: 10px;
   margin-bottom: 2rem;
-  @include media("<=xs") {
+  @include media("<=sm") {
     padding: 1rem;
     width: 100%;
   }
@@ -164,7 +164,7 @@ $random3: random(
 .com_section {
   display: flex;
   flex-wrap: wrap;
-  @include media("<=xs") {
+  @include media("<=sm") {
     flex-direction: column;
     align-items: center;
   }
@@ -191,7 +191,7 @@ $random3: random(
       height: 15rem;
       width: 24.5rem;
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       padding-bottom: 2rem;
       max-height: 80%;
       img {
@@ -242,7 +242,7 @@ $random3: random(
       }
     }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     margin: 1rem 0;
     width: 90%;
     height: max-content;
@@ -279,7 +279,7 @@ $random3: random(
     &:nth-child(2n + 1) {
       background-color: #e1e1e1;
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       margin: 0.5rem 0;
       width: 100%;
       box-sizing: border-box;
@@ -289,18 +289,18 @@ $random3: random(
   .techp_item,
   .euro_item {
     height: 2.5rem;
-    @include media("<=xs") {
+    @include media("<=sm") {
       height: min-content;
     }
   }
 
   .adv_item {
     height: 4rem;
-    @include media("<=xs") {
+    @include media("<=sm") {
       height: min-content;
     }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     flex-direction: column;
   }
 }

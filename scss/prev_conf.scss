@@ -7,7 +7,7 @@
   margin: 0 auto;
   min-height: 80vh;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: 100%;
     padding: 2rem 0;
   }
@@ -20,7 +20,7 @@
   box-sizing: border-box;
   margin-bottom: 2rem;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     margin: 0;
     border-radius: 0;
     padding: 1rem;
@@ -33,7 +33,7 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #e1e1e1;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: auto;
     font-size: 1.2rem;
   }
@@ -46,7 +46,7 @@
   width: 90%;
   margin: 1rem auto 2rem auto;
   text-align: justify;
-  @include media("<=xs") {
+  @include media("<=sm") {
     font-size: 14px;
     line-height: 1.4rem;
     width: 100%;
@@ -64,7 +64,7 @@
       height: 20rem;
     }
   }
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: 100%;
     .slick_item {
       img {

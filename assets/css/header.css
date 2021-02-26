@@ -35,7 +35,7 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_header .mode-desktop {
     display: none;
   }
@@ -43,7 +43,7 @@
 .main_header .mode-mobile {
   display: none;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_header .mode-mobile {
     display: flex;
     width: 100%;
@@ -81,7 +81,7 @@
   width: 60%;
   margin-top: 1rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .logo_container img:nth-child(2) {
     margin-top: 8px;
   }
@@ -91,7 +91,7 @@
     position: relative;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .logo_container {
     position: static;
     box-shadow: none;

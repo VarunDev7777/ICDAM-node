@@ -59,7 +59,7 @@
       }
     }
 
-    @include media("<=xs") {
+    @include media("<=sm") {
       &::before {
         height: 0;
         width: 20rem;
@@ -87,7 +87,7 @@
       z-index: 5;
       background-color: #005499;
     }
-    @include media("<=xs") {
+    @include media("<=sm") {
       color: #fff;
       &::before {
         height: 50rem;
@@ -100,7 +100,7 @@
     }
   }
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     flex-direction: column;
     margin: 0rem auto 0 auto;
     width: 100%;
@@ -134,7 +134,7 @@
   line-height: 3rem;
   text-align: justify;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     width: 100%;
     font-size: 14px;
     line-height: 20px;
@@ -149,7 +149,7 @@
   right: 200px;
   top: -130px;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     position: static;
     margin: 1rem auto;
   }

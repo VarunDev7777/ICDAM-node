@@ -23,7 +23,7 @@
   padding-top: 8rem;
   box-sizing: border-box;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .special_session_container {
     padding-top: 0;
     min-height: max-content;
@@ -43,7 +43,7 @@
   font-family: "Raleway-Regular";
   font-weight: bold;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .no-sessions {
     margin: 2rem auto;
     font-size: 1rem;
@@ -101,7 +101,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .spl_session_con {
     flex-direction: column;
     width: 100%;
@@ -125,7 +125,7 @@
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .section_heading {
     font-size: 1.4rem;
     width: auto;

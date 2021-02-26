@@ -24,7 +24,7 @@
   width: 90%;
   margin: 0 auto;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .committee_container {
     width: 100%;
   }
@@ -55,7 +55,7 @@
   padding: 0.5rem 1.5rem;
   pointer-events: none;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .committee_page_options .active_option {
     font-size: 1.1rem;
   }
@@ -115,7 +115,7 @@
   opacity: 1;
   transition: all 0.4s;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .committee_page_options {
     width: 300px;
     right: 0;
@@ -138,7 +138,7 @@
   border-bottom: 3px solid #005499;
   width: max-content;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .section_heading {
     font-size: 1.4rem;
     width: auto;
@@ -155,7 +155,7 @@
   border-radius: 10px;
   margin-bottom: 2rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .steering_committee_container,
 .advisory_committee_container,
 .european_tboard_container,
@@ -169,7 +169,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .com_section {
     flex-direction: column;
     align-items: center;
@@ -198,7 +198,7 @@
   height: 15rem;
   width: 24.5rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .comlist_item .profile_img {
     padding-bottom: 2rem;
     max-height: 80%;
@@ -246,7 +246,7 @@
 .comlist_item:hover .comitem_info span:last-child {
   display: block;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .comlist_item {
     margin: 1rem 0;
     width: 90%;
@@ -311,7 +311,7 @@
 .main_euro_con .euro_item:nth-child(2n+1) {
   background-color: #e1e1e1;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_techp_con .techp_item,
 .main_techp_con .adv_item,
 .main_techp_con .euro_item,
@@ -334,7 +334,7 @@
 .main_euro_con .euro_item {
   height: 2.5rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_techp_con .techp_item,
 .main_techp_con .euro_item,
 .main_adv_con .techp_item,
@@ -349,14 +349,14 @@
 .main_euro_con .adv_item {
   height: 4rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_techp_con .adv_item,
 .main_adv_con .adv_item,
 .main_euro_con .adv_item {
     height: min-content;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .main_techp_con,
 .main_adv_con,
 .main_euro_con {
