@@ -38,6 +38,7 @@
       width: 100vw;
       flex-wrap: wrap;
       flex-direction: unset;
+      justify-content: center;
     }
   }
 
@@ -133,8 +134,8 @@
       margin: 1rem 0;
     }
     @include media("<=sm",">xs"){
-      max-width: 45vw;
-      min-width: 45vw;
+      max-width: 46%;
+      min-width: 46%;
       margin: 1rem 0.6rem;
     }
   }
