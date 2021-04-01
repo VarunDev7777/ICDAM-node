@@ -107,6 +107,10 @@
                 </div>
                 <%- include("./Components/footer.ejs") %>
                     <script src="/assets/scripts/operations.js"></script>
+                    <script>
+                        document.querySelector(".publication_container").style.cssText = "visibility: hidden; opacity: 0";
+                        document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".publication_container").removeAttribute("style") }, 1000) })
+                    </script>
 </body>
 
 </html>

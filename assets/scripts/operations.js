@@ -1,25 +1,52 @@
 // loader
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.querySelector("#loader").style.visibility = "visible";
-  } else {
+document.querySelector("body").style.cssText = "visibility: hidden;";
+document.querySelector("#loader").style.cssText = "visibility: visible; opacity: 1";
+document.querySelector(".main_header").style.cssText = "visibility: hidden; opacity: 0";
+document.querySelector(".sidebar_container").style.cssText = "visibility: hidden; opacity: 0";
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
     document.querySelector("#loader").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
-  }
-};
+    document.querySelector("body").removeAttribute("style");
+    document.querySelector(".main_header").removeAttribute("style")
+    document.querySelector(".sidebar_container").style.cssText =
+      `-webkit-transition: 0.7s ease; 
+      -moz-transition: 0.7s ease; 
+      transition: 0.7s ease; 
+      -o-transition: 0.7s ease;`
+  }, 1000)
+})
 // sidebar-toggles
 let toggle_forward = document.querySelector(".sidebar_toggler");
 let toggle_forward_mobile = document.querySelector(".sidebar_toggler-mobile");
 let toggle_back = document.querySelector(".toggle_sidebar_close");
 let sidebar = document.querySelector(".sidebar_container");
 toggle_forward.onclick = () =>
-  (sidebar.style.cssText =
-    "-ms-transform: translateX(0%);-o-transform: translateX(0%);-moz-transform: translateX(0%);-webkit-transform: translateX(0%);transform: translateX(0%);");
+(sidebar.style.cssText =
+  `-ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 0.7s ease; 
+  -moz-transition: 0.7s ease; 
+  transition: 0.7s ease; 
+  -o-transition: 0.7s ease;`);
 toggle_forward_mobile.onclick = () =>
-  (sidebar.style.cssText =
-    "-ms-transform: translateX(0%);-o-transform: translateX(0%);-moz-transform: translateX(0%);-webkit-transform: translateX(0%);transform: translateX(0%);");
-toggle_back.onclick = () => sidebar.removeAttribute("style");
+(sidebar.style.cssText =
+  `-ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 0.7s ease; 
+  -moz-transition: 0.7s ease; 
+  transition: 0.7s ease; 
+  -o-transition: 0.7s ease;`);
+toggle_back.onclick = () => sidebar.style.cssText =
+  `-webkit-transition: 0.7s ease; 
+-moz-transition: 0.7s ease; 
+transition: 0.7s ease; 
+-o-transition: 0.7s ease;`;
 
 let pageparams = window.location.pathname;
 pageparams = pageparams.split("/")[1];
@@ -71,6 +98,8 @@ function changeactivelink(link) {
 
 // slider
 if (pageparams == "") {
+  document.querySelector(".home_component").style.cssText = "visibility: hidden; opacity: 0";
+  document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".home_component").removeAttribute("style") }, 1000) })
   function changeactiveItem() {
     let activeobj;
     let slider_con = document.querySelector(".slider_component");
@@ -116,6 +145,8 @@ if (pageparams == "") {
 
 // about section
 if (pageparams == "about") {
+  document.querySelector(".about_component").style.cssText = "visibility: hidden; opacity: 0";
+  document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".about_component").removeAttribute("style") }, 1000) })
   function changeabout(num) {
     let togglers = document.querySelectorAll(".about_uni");
     let aboutJan = document.querySelector(".about_JanWyzykowski");
@@ -182,6 +213,8 @@ if (pageparams == "about") {
 
 // Paper Section
 if (pageparams == "papers") {
+  document.querySelector(".papers_component").style.cssText = "visibility: hidden; opacity: 0";
+  document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".papers_component").removeAttribute("style") }, 1000) })
   let poption = document.querySelectorAll(".poption");
   let paper_data = document.querySelectorAll(".paper_data");
   if (localStorage.getItem("active-link")) {
@@ -216,6 +249,8 @@ if (pageparams == "papers") {
 
 // Registration section
 if (pageparams == "registrations") {
+  document.querySelector(".registration_container").style.cssText = "visibility: hidden; opacity: 0";
+  document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".registration_container").removeAttribute("style") }, 1000) })
   let targetString = document.querySelector(".ml6 .letters");
   targetString.innerHTML = targetString.textContent.replace(
     /\S/g,
@@ -242,6 +277,8 @@ if (pageparams == "registrations") {
 
 // committee section
 if (pageparams == "committe") {
+  document.querySelector(".committee_container").style.cssText = "visibility: hidden; opacity: 0";
+  document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".committee_container").removeAttribute("style") }, 1000) })
   let dropdown = document.querySelector(".coption_container");
   let dropini = document.querySelector(".committee_page_options");
   let activeop = document.querySelector(".active_option");

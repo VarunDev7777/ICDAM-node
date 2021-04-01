@@ -372,10 +372,35 @@
                             </div>
                             <span class="anchor_name">Ss 036.pdf</span>
                         </div>
+                        <div class="special-session">
+                            <a href="/assets/special-sessions/SS_037.pdf" class="anchor">SS_037: Intelligent System
+                                using emerging Technologies for Smart Society</a>
+                            <div class="organizer">
+                                Dr. Kaushal Kishor,
+                                ABES Institute of Technology Ghaziabad, Uttar Pradesh, India;
+                            </div>
+                            <span class="anchor_name">Ss 037.pdf</span>
+                        </div>
+                        <div class="special-session">
+                            <a href="/assets/special-sessions/SS_038.pdf" class="anchor">SS_038: Emerging Applications
+                                of Artificial Intelligence and Machine Learning in Ad-Hoc Network</a>
+                            <div class="organizer">
+                                Dr. Jasminder Kaur Sandhu, Chitkara University Institute of Engineering and Technology,
+                                Chitkara
+                                University, Punjab, India;
+                                Dr. Luxmi Sapra, Associate Professor, Dev Bhoomi Institute of Technology, Dehradun,
+                                India;
+                            </div>
+                            <span class="anchor_name">Ss 038.pdf</span>
+                        </div>
                     </div>
                 </div>
                 <%- include("./Components/footer.ejs") %>
                     <script src="/assets/scripts/operations.js"></script>
+                    <script>
+                        document.querySelector(".special_session_container").style.cssText = "visibility: hidden; opacity: 0";
+                        document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".special_session_container").removeAttribute("style") }, 1000) })
+                    </script>
 </body>
 
 </html>
