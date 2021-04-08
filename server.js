@@ -16,6 +16,9 @@ mongoose.connect(
 //View Engine & Static File Routing
 app.set("view engine", "ejs");
 app.use("/assets", express.static("assets"));
+app.get("/ads.txt", function (req, res) {
+  res.sendFile("./ads.txt", { root: __dirname })
+})
 
 //Environment Variables
 require("dotenv").config();
