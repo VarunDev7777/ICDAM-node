@@ -401,4 +401,9 @@
   }
 }
 
+.ad_container {
+  width: max-content;
+  margin: 1rem auto;
+}
+
 /*# sourceMappingURL=index.css.map */
