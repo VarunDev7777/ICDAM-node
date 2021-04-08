@@ -402,8 +402,14 @@
 }
 
 .ad_container {
-  width: max-content;
+  min-height: 200px;
   margin: 1rem auto;
+  min-width: 90%;
+}
+@media (max-width: 575px) {
+  .ad_container {
+    min-height: 400px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

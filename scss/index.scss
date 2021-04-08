@@ -418,6 +418,11 @@
 }
 
 .ad_container{
-  width: max-content;
+  min-height: 200px;
   margin: 1rem auto;
+  min-width: 90%;
+
+  @include media("<=xs"){
+    min-height: 400px;
+  }
 }
