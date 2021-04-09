@@ -56,6 +56,13 @@
         left: 2rem;
       }
     }
+    @include media("<=xl",">sm"){
+      top: 1rem;
+      right: 2rem;
+      &:hover{
+        right: 2.5rem;
+      }
+    }
   }
   @include media("<=sm") {
     width: 100vw;
@@ -124,6 +131,10 @@
         font-size: 1rem;
         box-sizing: border-box;
         padding: 0.5rem 1rem;
+      }
+      @include media("<=xl",">sm"){
+        padding: 0.8rem 1rem;
+        font-size: 18px;
       }
     }
   }

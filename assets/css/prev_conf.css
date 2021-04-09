@@ -51,10 +51,11 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #e1e1e1;
 }
-@media (max-width: 767px) {
+@media (max-width: 1500px) {
   .section_heading {
     width: auto;
     font-size: 1.2rem;
+    text-align: center;
   }
 }
 

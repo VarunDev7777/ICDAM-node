@@ -73,6 +73,15 @@
     left: 2rem;
   }
 }
+@media (max-width: 1500px) and (min-width: 768px) {
+  .sidebar_container .toggle_sidebar_close {
+    top: 1rem;
+    right: 2rem;
+  }
+  .sidebar_container .toggle_sidebar_close:hover {
+    right: 2.5rem;
+  }
+}
 @media (max-width: 767px) {
   .sidebar_container {
     width: 100vw;
@@ -142,6 +151,12 @@
     font-size: 1rem;
     box-sizing: border-box;
     padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 1500px) and (min-width: 768px) {
+  .link_container ul li {
+    padding: 0.8rem 1rem;
+    font-size: 18px;
   }
 }
 

@@ -30,6 +30,9 @@
     @include media("<=sm") {
       width: auto;
     }
+    @include media("<=xl",">sm"){
+      width: auto;
+    }
   }
 
   p {
@@ -252,5 +255,9 @@
   @include media("<=sm") {
     width: auto;
     font-size: 1em;
+  }
+  @include media("<=xl",">sm"){
+    font-size: 1.5rem;
+    width: auto;
   }
 }
