@@ -51,7 +51,7 @@
   flex-wrap: wrap;
 }
 .download_maincon a {
-  height: 24rem;
+  min-height: 24rem;
   width: 22rem;
   position: relative;
   margin: 1rem 2rem;
@@ -105,28 +105,74 @@
   filter: invert(14%) sepia(99%) saturate(6822%) hue-rotate(346deg) brightness(88%) contrast(107%);
 }
 .download_maincon a:nth-child(6)::after {
-  background-color: #0017e6;
+  background-color: #000853;
 }
 .download_maincon a:nth-child(6) .img_con {
-  background-color: #0017e660;
+  background-color: #00085360;
 }
 .download_maincon a:nth-child(6) .img_con img {
-  filter: invert(13%) sepia(99%) saturate(6441%) hue-rotate(239deg) brightness(81%) contrast(129%);
+  filter: invert(7%) sepia(80%) saturate(5536%) hue-rotate(237deg) brightness(63%) contrast(112%);
+}
+.download_maincon a:nth-child(7)::after {
+  background-color: #ffc0cb;
+}
+.download_maincon a:nth-child(7) .img_con {
+  background-color: #ffc0cb60;
+}
+.download_maincon a:nth-child(7) .img_con img {
+  filter: invert(74%) sepia(15%) saturate(798%) hue-rotate(304deg) brightness(109%) contrast(101%);
+}
+.download_maincon a:nth-child(8)::after {
+  background-color: #2fadc3;
+}
+.download_maincon a:nth-child(8) .img_con {
+  background-color: #2fadc360;
+}
+.download_maincon a:nth-child(8) .img_con img {
+  filter: invert(63%) sepia(21%) saturate(1395%) hue-rotate(141deg) brightness(91%) contrast(86%);
+}
+.download_maincon a:nth-child(9)::after {
+  background-color: #686c88;
+}
+.download_maincon a:nth-child(9) .img_con {
+  background-color: #686c8860;
+}
+.download_maincon a:nth-child(9) .img_con img {
+  filter: invert(43%) sepia(12%) saturate(787%) hue-rotate(195deg) brightness(95%) contrast(88%);
+}
+.download_maincon a:nth-child(10)::after {
+  background-color: #000000;
+}
+.download_maincon a:nth-child(10) .img_con {
+  background-color: #00000060;
+}
+.download_maincon a:nth-child(10) .img_con img {
+  filter: brightness(0);
+}
+.download_maincon a:nth-child(11)::after {
+  background-color: #a05c0f;
+}
+.download_maincon a:nth-child(11) .img_con {
+  background-color: #a05c0f60;
+}
+.download_maincon a:nth-child(11) .img_con img {
+  filter: invert(31%) sepia(23%) saturate(4626%) hue-rotate(18deg) brightness(100%) contrast(88%);
 }
 .download_maincon a::after {
   position: absolute;
   content: "Download";
   bottom: 0;
   left: 0;
-  margin: auto;
-  height: 4rem;
+  min-height: 4rem;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
   width: 0;
   opacity: 0;
+  font-family: "SourceSansPro";
   transition: 0.3s ease;
 }
 @media (max-width: 767px) {
@@ -169,11 +215,12 @@
 .download_maincon .download_title {
   width: 100%;
   border-top: 1px solid #e1e1e1;
-  height: 4rem;
-  font-family: Inter;
+  min-height: 4rem;
+  font-family: "SourceSansPro";
   font-size: 1.6rem;
   transition: 0.3s ease;
   display: flex;
+  text-align: center;
   justify-content: center;
   overflow: hidden;
   align-items: center;
