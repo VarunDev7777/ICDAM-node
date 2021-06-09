@@ -177,6 +177,18 @@
       }
     }
 
+    &:nth-child(12) {
+      &::after {
+        background-color: #00a79e;
+      }
+      .img_con {
+        background-color: #00a79e60;
+        img {
+          filter: invert(40%) sepia(47%) saturate(2011%) hue-rotate(147deg) brightness(96%) contrast(107%);
+        }
+      }
+    }
+
     &::after {
       position: absolute;
       content: "Download";
