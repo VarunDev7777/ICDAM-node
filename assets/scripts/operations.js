@@ -153,6 +153,7 @@ if (pageparams == "about") {
     let aboutUni = document.querySelector(".about_uniinov");
     let aboutPeitUni = document.querySelector(".about_pietuni");
     let aboutIisUni = document.querySelector(".about_iisdtbu");
+    let aboutiesUni = document.querySelector(".about_iesuni");
     togglers.forEach((ele) => {
       ele.classList.remove("activeitem");
     });
@@ -164,9 +165,11 @@ if (pageparams == "about") {
         aboutUni.classList.remove("activeabitem");
         aboutPeitUni.classList.remove("activeabitem");
         aboutIisUni.classList.remove("activeabitem");
+        aboutiesUni.classList.remove("activeabitem");
         aboutUni.classList.add("inactiveabitem");
         aboutPeitUni.classList.add("inactiveabitem");
         aboutIisUni.classList.add("inactiveabitem");
+        aboutiesUni.classList.add("inactiveabitem");
       }
     }
     if (num == 2) {
@@ -177,9 +180,11 @@ if (pageparams == "about") {
         aboutJan.classList.remove("activeabitem");
         aboutUni.classList.remove("activeabitem");
         aboutIisUni.classList.remove("activeabitem");
+        aboutiesUni.classList.remove("activeabitem");
         aboutJan.classList.add("inactiveabitem");
         aboutUni.classList.add("inactiveabitem");
         aboutIisUni.classList.add("inactiveabitem");
+        aboutiesUni.classList.add("inactiveabitem");
       }
     }
     if (num == 3) {
@@ -190,9 +195,11 @@ if (pageparams == "about") {
         aboutJan.classList.remove("activeabitem");
         aboutPeitUni.classList.remove("activeabitem");
         aboutIisUni.classList.remove("activeabitem");
+        aboutiesUni.classList.remove("activeabitem");
         aboutJan.classList.add("inactiveabitem");
         aboutPeitUni.classList.add("inactiveabitem");
         aboutIisUni.classList.add("inactiveabitem");
+        aboutiesUni.classList.add("inactiveabitem");
       }
     }
     if (num == 4) {
@@ -203,9 +210,26 @@ if (pageparams == "about") {
         aboutJan.classList.remove("activeabitem");
         aboutUni.classList.remove("activeabitem");
         aboutPeitUni.classList.remove("activeabitem");
+        aboutiesUni.classList.remove("activeabitem");
         aboutJan.classList.add("inactiveabitem");
         aboutUni.classList.add("inactiveabitem");
         aboutPeitUni.classList.add("inactiveabitem");
+        aboutiesUni.classList.add("inactiveabitem");
+      }
+    }
+    if (num == 5) {
+      togglers[4].classList.add("activeitem");
+      if (aboutiesUni.classList.contains("activebitem")) return;
+      else {
+        aboutiesUni.classList.replace("inactiveabitem", "activeabitem");
+        aboutJan.classList.remove("activeabitem");
+        aboutUni.classList.remove("activeabitem");
+        aboutPeitUni.classList.remove("activeabitem");
+        aboutIisUni.classList.remove("activeabitem");
+        aboutJan.classList.add("inactiveabitem");
+        aboutUni.classList.add("inactiveabitem");
+        aboutPeitUni.classList.add("inactiveabitem");
+        aboutIisUni.classList.add("inactiveabitem");
       }
     }
   }

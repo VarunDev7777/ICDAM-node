@@ -167,6 +167,15 @@
 .download_maincon a:nth-child(12) .img_con img {
   filter: invert(40%) sepia(47%) saturate(2011%) hue-rotate(147deg) brightness(96%) contrast(107%);
 }
+.download_maincon a:nth-child(13)::after {
+  background-color: #b02cd1;
+}
+.download_maincon a:nth-child(13) .img_con {
+  background-color: #b02cd160;
+}
+.download_maincon a:nth-child(13) .img_con img {
+  filter: invert(24%) sepia(58%) saturate(4108%) hue-rotate(277deg) brightness(89%) contrast(93%);
+}
 .download_maincon a::after {
   position: absolute;
   content: "Download";

@@ -73,6 +73,12 @@
   transform: scale(1);
   border-radius: 0;
 }
+@media (min-width: 768px) and (max-width: 1900px) {
+  .about_toggle .about_uni {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
 @media (max-width: 767px) {
   .about_toggle .about_uni::before {
     height: 0;
@@ -130,7 +136,8 @@
 .about_JanWyzykowski,
 .about_uniinov,
 .about_pietuni,
-.about_iisdtbu {
+.about_iisdtbu,
+.about_iesuni {
   width: 80%;
   padding: 1rem;
   border-top: 1px solid #ececec;
@@ -146,7 +153,8 @@
   .about_JanWyzykowski,
 .about_uniinov,
 .about_pietuni,
-.about_iisdtbu {
+.about_iisdtbu,
+.about_iesuni {
     width: 100%;
     font-size: 14px;
     line-height: 20px;

@@ -55,16 +55,16 @@
 }
 
 .footer_logo {
-  width: max-content;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer_logo img {
-  width: 60%;
+  width: 30%;
 }
 .footer_logo img:nth-child(2) {
-  width: 50%;
+  width: 20%;
   margin-top: 1rem;
 }
 @media (max-width: 767px) {

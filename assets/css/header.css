@@ -86,10 +86,11 @@
 }
 .logo_container img {
   height: auto;
-  width: 80%;
+  width: 70%;
 }
 .logo_container img:nth-child(2) {
-  width: 60%;
+  width: 40%;
+  height: 20%;
   margin-top: 1rem;
 }
 @media (max-width: 767px) {
