@@ -20,6 +20,10 @@ app.get("/ads.txt", function (req, res) {
   res.sendFile("./ads.txt", { root: __dirname })
 })
 
+app.get("/.well-known/assetlinks.json", function (req, res) {
+  res.sendFile("./assets/json/assetlinks.json", { root: __dirname })
+})
+
 //Environment Variables
 require("dotenv").config();
 
