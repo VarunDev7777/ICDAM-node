@@ -18,17 +18,68 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZTVY0WMV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-X5ZTVY0WMV');
+
     </script>
 </head>
 
 <body>
     <%- include("./Components/loader.ejs") %>
-        <%- include("./Components/header.ejs") %>
-            <%- include("./Components/sidebar.ejs") %>
+    <%- include("./Components/header.ejs") %>
+    <%- include("./Components/sidebar.ejs") %>
+
+    <div class="papers_component">
+        <div class="paper_page_options">
+            <div class="poption pactive" id="callp">ICDAM-2020</div>
+            <div class="poption">ICDAM-2021</div>
+        </div>
+
+        <div class="paper_submission_container paper_data">
+            <div class="main_container">
+                <h1 class="section_heading">First International Conference on Data Analytics and Management
+                    (ICDAM-2020)</h1>
+                <p class="prev_conf_content">
+                    First International Conference on Data Analytics
+                    and Management (ICDAM-2020) was jointly organized
+                    by Jan Wyzykowski University Poland and B.M.
+                    Institute of Engineering and Technology, India on
+                    18th June 2020. ICDAM-2020 received 385 papers from
+                    approximately 1430 authors and a total of 70 papers
+                    were accepted with an acceptance ratio of 18%.
+                    All accepted papers were published in Springer’s
+                    Lecture Notes on Data Engineering and Communications
+                    Technologies, an scopus indexed series. A total of
+                    122 participants attended the conference including
+                    authors, keynotes, delegates, academicians, and industry
+                    experts. ICDAM-2020 received papers from 19 countries and
+                    got lot of recommendations from the science community for
+                    the organization and the quality of papers. Due to
+                    unexpected COVID-19, ICDAM-2020 was organized in
+                    virtual mode.
+                </p>
+                <div class="slick_container">
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-1.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-2.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-3.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-4.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-5.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-6.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-7.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-8.jpeg"></div>
+                    <div class="slick_item"><img src="/assets/images/slick/ic20-9.jpeg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
                 <div class="prev_conf_container">
                     <div class="main_container">
                        
@@ -67,10 +118,11 @@
                         </div>
                     </div>
                 </div>
-                <%- include("./Components/footer.ejs") %>
-                    <script src="/assets/scripts/jquery.js"></script>
-                    <script src="/assets/scripts/slick.min.js"></script>
-                    <script src="/assets/scripts/operations.js"></script>
+-->
+    <%- include("./Components/footer.ejs") %>
+    <script src="/assets/scripts/jquery.js"></script>
+    <script src="/assets/scripts/slick.min.js"></script>
+    <script src="/assets/scripts/operations.js"></script>
 </body>
 
 </html>
