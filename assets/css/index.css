@@ -62,9 +62,6 @@
   width: 100%;
   background-color: #00000070;
 }
-.slider_component .conf-info {
-  border-right: 1px solid #fff;
-}
 .slider_component .active-citem {
   visibility: visible;
   transform: scale(1);

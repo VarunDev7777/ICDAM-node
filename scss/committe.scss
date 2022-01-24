@@ -171,9 +171,9 @@ $random3: random(
 }
 
 .comlist_item {
-  height: 22rem;
   width: max-content;
-  margin: 1rem 0.5rem;
+  margin: 4rem 0.5rem 0 0.5rem;
+  width: 24rem;
   position: relative;
   border: 1px solid #00000029;
   transition: 0.3s ease;
@@ -193,7 +193,6 @@ $random3: random(
     }
     @include media("<=sm") {
       padding-bottom: 2rem;
-      max-height: 80%;
       img {
         width: 100%;
         height: auto;

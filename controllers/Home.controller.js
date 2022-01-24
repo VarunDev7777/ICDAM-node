@@ -64,8 +64,17 @@ module.exports = {
     res.render("adminroutes");
   },
 
-  getadmincomm: (req, res, next) => {
-    res.render("admin_committe");
+  getsteeradmincomm: async (req, res, next) => {
+    const sMemList = await steerCommMemModel.find({}).sort({ $natural: 1 });
+    const aMemList = await advCommMemModel.find({}).sort({ $natural: 1 });
+    const tMemList = await techCommMemModel.find({}).sort({ $natural: 1 });
+    const eMemList = await euroCommMemModel.find({}).sort({ $natural: 1 });
+    res.render("admin_committe", {
+      steerMemList: sMemList,
+      advMemList: aMemList,
+      techMemList: tMemList,
+      euroMemList: eMemList,
+    });
   },
 
   // Post Routes

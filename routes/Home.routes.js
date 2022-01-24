@@ -17,7 +17,7 @@ Router.get("/previous-conference", HomeControl.getPreviousConference);
 
 // admin routes
 Router.get("/admin", HomeControl.getadmin);
-Router.get("/admin/committee", HomeControl.getadmincomm);
+Router.get("/admin/committee", HomeControl.getsteeradmincomm);
 
 // Post Routes
 Router.post(
