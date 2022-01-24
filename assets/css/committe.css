@@ -247,7 +247,7 @@
 }
 @media (max-width: 767px) {
   .comlist_item {
-    margin: 1rem 0;
+    margin: 4rem 0.5rem 0 0.5rem;
     width: 90%;
     height: max-content;
   }
@@ -324,14 +324,6 @@
     width: 100%;
     box-sizing: border-box;
   }
-}
-.main_techp_con .techp_item,
-.main_techp_con .euro_item,
-.main_adv_con .techp_item,
-.main_adv_con .euro_item,
-.main_euro_con .techp_item,
-.main_euro_con .euro_item {
-  height: 2.5rem;
 }
 @media (max-width: 767px) {
   .main_techp_con .techp_item,

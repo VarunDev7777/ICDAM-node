@@ -242,7 +242,7 @@ $random3: random(
     }
   }
   @include media("<=sm") {
-    margin: 1rem 0;
+    margin: 4rem 0.5rem 0 0.5rem;
     width: 90%;
     height: max-content;
   }
@@ -287,7 +287,6 @@ $random3: random(
 
   .techp_item,
   .euro_item {
-    height: 2.5rem;
     @include media("<=sm") {
       height: min-content;
     }

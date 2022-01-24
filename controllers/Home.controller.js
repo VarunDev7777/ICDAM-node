@@ -65,16 +65,21 @@ module.exports = {
   },
 
   getsteeradmincomm: async (req, res, next) => {
+    res.render("admin_committe");
+  },
+
+  getAllData: async (req, res, next) => {
     const sMemList = await steerCommMemModel.find({}).sort({ $natural: 1 });
     const aMemList = await advCommMemModel.find({}).sort({ $natural: 1 });
     const tMemList = await techCommMemModel.find({}).sort({ $natural: 1 });
     const eMemList = await euroCommMemModel.find({}).sort({ $natural: 1 });
-    res.render("admin_committe", {
-      steerMemList: sMemList,
-      advMemList: aMemList,
-      techMemList: tMemList,
-      euroMemList: eMemList,
-    });
+
+    res.json({
+      sMemList,
+      aMemList,
+      tMemList,
+      eMemList
+    })
   },
 
   // Post Routes
@@ -90,16 +95,25 @@ module.exports = {
     });
   },
 
-  postSteeringCommitteeMembers: (req, res, next) => {
-    const SterrMember = req.body;
-    console.log(req.body);
-    steerCommMemModel.create(SterrMember, (err, data) => {
-      if (err) {
-        res.status(500).send(err);
-      } else {
-        res.status(201).send(data);
+  postSteeringCommitteeMembers: async (req, res, next) => {
+    try {
+      const SterrMember = req.body;
+      if (Object.values(req.body) == undefined || Object.values(req.body) == null) {
+        return res.status(500).json({ msg: 'Body is Empty. Check your request' });
       }
-    });
+
+      console.log(req.body)
+
+      steerCommMemModel.create(SterrMember, (err, data) => {
+        if (err) {
+          return res.status(500).send(err);
+        } else {
+          return res.status(201).send(data);
+        }
+      });
+    } catch (error) {
+      res.status(500).json({ msg: 'Some Unkown Error Occured' })
+    }
   },
 
   postAdvisoryCommitteeMembers: (req, res, next) => {
