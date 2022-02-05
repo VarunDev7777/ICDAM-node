@@ -27,116 +27,101 @@
         gtag('config', 'G-X5ZTVY0WMV');
 
     </script>
+    
+   
 </head>
 
 <body>
-    <%- include("./Components/loader.ejs") %>
-    <%- include("./Components/header.ejs") %>
-    <%- include("./Components/sidebar.ejs") %>
 
-<!--
-    <div class="papers_component">
-    <div class="paper_page_options">
-        <div class="poption pactive" id="callp">ICDAM-2020</div>
-        <div class="poption">ICDAM-2021</div>
-    </div>
--->
-    <!-- ICDAM-2020 -->
-<!--
-    <div class="call_for_papers_container paper_data">
-        <h1 class="paper_headline">ICDAM-2020</h1>
-        <div class="call_info">
-        <h1 class="section_heading">First International Conference on Data Analytics and Management
+<%- include("./Components/loader.ejs") %>
+<%- include("./Components/header.ejs") %>
+<%- include("./Components/sidebar.ejs") %>
+
+<button class="tablink" onclick="openPage('2020', this, '#005499')" id="defaultOpen">ICDAM-2020</button>
+<button class="tablink" onclick="openPage('2021', this, '#005499')" >ICDAM-2021</button>
+
+<div class="prev_conf_container">
+    
+<!-- ICDAM-2020   -->
+     <div id="2020" class="tabcontent">
+          <div class="main_container">
+            <h1 class="section_heading">First International Conference on Data Analytics and Management
             (ICDAM-2020)</h1>
-        <p class="prev_conf_content">
-            First International Conference on Data Analytics and Management (ICDAM-2020) was jointly organized
-            by Jan Wyzykowski University Poland and B.M. Institute of Engineering and Technology, India on
-            18th June 2020. ICDAM-2020 received 385 papers from approximately 1430 authors and a total of 70 papers were accepted with an acceptance ratio of 18%. All accepted papers were published in Springer’s Lecture Notes on Data Engineering and Communications Technologies, an scopus indexed series. A total of 122 participants attended the conference including authors, keynotes, delegates, academicians, and industry experts. ICDAM-2020 received papers from 19 countries and
-            got lot of recommendations from the science community for the organization and the quality of papers. Due to unexpected COVID-19, ICDAM-2020 was organized in virtual mode.
-        </p>
+            <p class="prev_conf_content">
+            First International Conference on Data Analytics
+            and Management (ICDAM-2020) was jointly organized by Jan Wyzykowski University Poland and B.M. Institute of Engineering and Technology, India on 18th June 2020. ICDAM-2020 received 385 papers from approximately 1430 authors and a total of 70 papers were accepted with an acceptance ratio of 18%. All accepted papers were published in Springer’s Lecture Notes on Data Engineering and Communications Technologies, an scopus indexed series. A total of 122 participants attended the conference including authors, keynotes, delegates, academicians, and industry experts. ICDAM-2020 received papers from 19 countries and got lot of recommendations from the science community for the organization and the quality of papers. Due to unexpected COVID-19, ICDAM-2020 was organized in virtual mode. </p>
+              
+            <div class="row">
+                <div class="column"><img src="/assets/images/slick/ic20-1.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-2.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-3.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-4.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-5.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-6.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-7.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-8.jpeg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic20-9.jpeg" style="width:100%"></div>
+            </div>
+          </div>
         </div>
-        <div class="slick_container">
-            <div class="slick_item"><img src="/assets/images/slick/ic20-1.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-2.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-3.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-4.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-5.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-6.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-7.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-8.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-9.jpeg"></div>
-        </div>
-    </div>
--->
-
-    <!-- Paper Submission Container -->
-<!--
-    <div class="paper_submission_container paper_data data-inactive">
-        <h1 class="paper_headline">ICDAM-2021</h1>
-        <div class="submission_container">
-             <h1 class="section_heading">Second International Conference on Data Analytics and Management (ICDAM-2021)</h1>
-        <p class="prev_conf_content">
-           The second International Conference on Data Analytics and Management (ICDAM-2021) was jointly organized by Jan Wyzykowski University Poland, Panipat Institute of Engineering and TechnologyIndia, IIS University India and IES University India on 26th June 2021. ICDAM-2021 received 650 papers from approximately 2600 authors and a total of 131 papers were accepted with an acceptance ratio of 20%. All accepted papers were published in Springer’s Lecture Notes on Data Engineering and Communications Technologies, anscopus indexed series. A total of 220 participants attended the conference including authors, keynotes, delegates, academicians, and industry experts. ICDAM-2021 received papers from 24 countries and got lot of recommendations from the science community for the organization and the quality of papers. Due to unexpected COVID-19, ICDAM-2021 was organized in virtual mode.
-        </p>
-        <div class="slick_container">
-            <div class="slick_item"><img src="/assets/images/slick/ic20-1.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-2.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-3.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-4.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-5.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-6.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-7.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-8.jpeg"></div>
-            <div class="slick_item"><img src="/assets/images/slick/ic20-9.jpeg"></div>
-        </div>
-        </div>
+    
+<!--  ICDAM-2021  -->
+    <div id="2021" class="tabcontent">
+          <div class="main_container">
+            <h1 class="section_heading">Second International Conference on Data Analytics and Management (ICDAM-2021)</h1>
+            <p class="prev_conf_content">
+            The second International Conference on Data Analytics and Management (ICDAM-2021) was jointly organized by Jan Wyzykowski University Poland, Panipat Institute of Engineering and TechnologyIndia, IIS University India and IES University India on 26th June 2021. ICDAM-2021 received 650 papers from approximately 2600 authors and a total of 131 papers were accepted with an acceptance ratio of 20%. All accepted papers were published in Springer’s Lecture Notes on Data Engineering and Communications Technologies, anscopus indexed series. A total of 220 participants attended the conference including authors, keynotes, delegates, academicians, and industry experts. ICDAM-2021 received papers from 24 countries and got lot of recommendations from the science community for the organization and the quality of papers. Due to unexpected COVID-19, ICDAM-2021 was organized in virtual mode.</p>
+              
+            <div class="row">
+                <div class="column"><img src="/assets/images/slick/ic21-1.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-2.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-3.jpg"style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-4.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-5.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-6.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-7.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-8.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-9.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-10.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-11.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-12.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-13.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-14.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-15.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-16.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-17.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-18.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-19.jpg" style="width:100%"></div>
+                <div class="column"><img src="/assets/images/slick/ic21-20.jpg" style="width:100%"></div>
+            </div>
+           </div>
     </div>
 </div>
--->
 
-                <div class="prev_conf_container">
-                    <div class="main_container">
-                       
-                       
-                        <h1 class="section_heading">First International Conference on Data Analytics and Management
-                            (ICDAM-2020)</h1>
-                        <p class="prev_conf_content">
-                            First International Conference on Data Analytics
-                            and Management (ICDAM-2020) was jointly organized
-                            by Jan Wyzykowski University Poland and B.M.
-                            Institute of Engineering and Technology, India on
-                            18th June 2020. ICDAM-2020 received 385 papers from
-                            approximately 1430 authors and a total of 70 papers
-                            were accepted with an acceptance ratio of 18%.
-                            All accepted papers were published in Springer’s
-                            Lecture Notes on Data Engineering and Communications
-                            Technologies, an scopus indexed series. A total of
-                            122 participants attended the conference including
-                            authors, keynotes, delegates, academicians, and industry
-                            experts. ICDAM-2020 received papers from 19 countries and
-                            got lot of recommendations from the science community for
-                            the organization and the quality of papers. Due to
-                            unexpected COVID-19, ICDAM-2020 was organized in
-                            virtual mode.
-                        </p>
-                        <div class="slick_container">
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-1.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-2.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-3.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-4.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-5.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-6.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-7.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-8.jpeg"></div>
-                            <div class="slick_item"><img src="/assets/images/slick/ic20-9.jpeg"></div>
-                        </div>
-                    </div>
-                </div>
 
-    <%- include("./Components/footer.ejs") %>
-    <script src="/assets/scripts/jquery.js"></script>
-    <script src="/assets/scripts/slick.min.js"></script>
-    <script src="/assets/scripts/operations.js"></script>
+<script>
+   function openPage(pageName,elmnt,color) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+     tabcontent[i].style.display = "none";
+   }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+   }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+   }
+
+   // Get the element with id="defaultOpen" and click on it
+   document.getElementById("defaultOpen").click();
+</script>
+   
+<%- include("./Components/footer.ejs") %>
+<script src="/assets/scripts/operations.js"></script>
+<script src="/assets/scripts/jquery.js"></script>
+<script src="/assets/scripts/slick.min.js"></script>
+   
 </body>
-
 </html>
