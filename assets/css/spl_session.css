@@ -54,23 +54,24 @@
 .spl_session_con {
   background-color: #fff;
   border-radius: 10px;
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 2rem auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   justify-content: center;
   align-items: center;
 }
 .spl_session_con .special-session {
   margin: 1rem;
-  width: 45%;
+  width: 42%;
   padding: 1rem;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+    box-shadow: 5px 5px 2.5px lightblue;
 }
 .spl_session_con .special-session:nth-child(2n-1) {
   background-color: #444444;
@@ -120,7 +121,7 @@
   font-size: 2rem;
   padding-bottom: 1rem;
   border-bottom: 3px solid #005499;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
