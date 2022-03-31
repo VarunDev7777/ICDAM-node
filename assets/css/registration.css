@@ -65,6 +65,13 @@
     line-height: 1.4rem;
   }
 }
+
+.register_fee {
+    padding: 10px;
+    background-clip: blue;
+    color: white;
+}
+
 .registration_details .author_reg_fees {
   list-style: decimal;
   padding: 0 1rem;
