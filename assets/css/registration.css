@@ -67,10 +67,11 @@
 }
 
 .register_fee {
-    padding: 10px;
-    background-clip: blue;
-    color: white;
+    color: #005499;
+    font-weight: bold;
+    text-decoration: underline;
 }
+
 
 .registration_details .author_reg_fees {
   list-style: decimal;
