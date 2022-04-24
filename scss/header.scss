@@ -1,8 +1,10 @@
 @import "_config.scss";
+
 .main_header {
   display: flex;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
+
   .sub_header {
     width: 80%;
     margin: 0 auto;
@@ -10,7 +12,8 @@
     place-content: space-between;
     position: relative;
     padding: 2rem 0;
-    @include media("<=xl",">sm"){
+
+    @include media("<=xl", ">sm") {
       padding: 2rem 0;
       width: 90%;
     }
@@ -31,6 +34,7 @@
 
   .mode-mobile {
     display: none;
+
     @include media("<=sm") {
       display: flex;
       width: 100%;
@@ -44,7 +48,8 @@
 
 .logo_space {
   width: 18rem;
-  @include media("<=xl",">sm"){
+
+  @include media("<=xl", ">sm") {
     min-width: 190px;
   }
 }
@@ -60,27 +65,30 @@
   position: absolute;
   top: 0;
   background-color: #ffffff;
-  height: 15rem;
+  height: 12rem;
   justify-content: center;
   align-items: center;
+
   img {
-    height: auto;
-    width: 70%;
+    width: 60%;
+
     &:nth-child(2) {
       width: 40%;
       height: 20%;
       margin-top: 1rem;
+
       @include media("<=sm") {
         margin-top: 8px;
       }
     }
   }
 
-  @include media("<=xl",">=sm") {
+  @include media("<=xl", ">=sm") {
     width: 10rem;
     height: 10rem;
     padding: 1rem;
-    img{
+
+    img {
       height: 50%;
       width: 100%;
     }
@@ -91,6 +99,7 @@
     box-shadow: none;
     height: max-content;
     width: min-content;
+
     img {
       width: 6rem;
       margin: 0;
@@ -105,26 +114,30 @@
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 1.2rem;
-    margin: 0 9rem;
+    margin: 0 4rem;
   }
-  .big-title-2{
+
+  .big-title-2 {
     display: none;
     margin-right: 2rem;
   }
-  @include media("<=xl",">sm"){
+
+  @include media("<=xl", ">sm") {
     display: flex;
     align-items: center;
     justify-content: center;
-    h4{
+
+    h4 {
       margin: 0 1rem;
-      font-size: 1.2rem;
-      line-height: 2rem;
-      font-family: 'Helvetica';
+      font-size: 1rem;
+      line-break: loose;
     }
-    .big-title{
+
+    .big-title {
       display: none;
     }
-    .big-title-2{
+
+    .big-title-2 {
       display: flex;
     }
   }
@@ -136,6 +149,7 @@
   cursor: pointer;
   width: min-content;
   margin-top: 1rem;
+
   .ham {
     height: 4px;
     background-color: #000000;
@@ -150,9 +164,11 @@
     &:nth-child(3) {
       width: 1.6rem;
     }
+
     &:nth-child(2) {
       width: 2rem;
     }
+
     &:nth-child(1) {
       width: 2.4rem;
     }

@@ -24,7 +24,9 @@ module.exports = {
   },
 
   getRegistration: (req, res, next) => {
-    res.render("registration");
+    res.render("registration", {
+      strtpePublicKey: process.env.STRIPE_PUBLIC_KEY
+    });
   },
 
   getSponsorship: (req, res, next) => {

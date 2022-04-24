@@ -20,13 +20,14 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.11.0",
-    "sass": "^1.33.0"
+    "sass": "^1.33.0",
+    "stripe": "^8.217.0"
   },
   "keywords": [
     "heroku",
     "icdam2"
   ],
   "engines": {
-    "node": "12.16.2"
+    "node": "v16.14.0"
   }
 }

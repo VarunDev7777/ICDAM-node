@@ -52,13 +52,15 @@
 
     &:hover {
       color: #fff;
+
       &::before {
         height: 180%;
         transform: scale(1);
         border-radius: 0;
       }
     }
-    @include media(">sm","<=xxl"){
+
+    @include media(">sm", "<=xxl") {
       font-size: 1.2rem;
       font-weight: bold;
     }
@@ -91,13 +93,16 @@
       z-index: 5;
       background-color: #005499;
     }
+
     @include media("<=sm") {
       color: #fff;
+
       &::before {
         height: 50rem;
         transform: scale(1);
         border-radius: 0;
       }
+
       &::after {
         display: none;
       }
@@ -123,11 +128,7 @@
   display: none;
 }
 
-.about_JanWyzykowski,
-.about_uniinov,
-.about_pietuni,
-.about_iisdtbu,
-.about_iesuni {
+.about_item {
   width: 80%;
   padding: 1rem;
   border-top: 1px solid #ececec;

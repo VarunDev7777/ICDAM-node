@@ -29,7 +29,8 @@
     @include media("<=sm") {
       width: auto;
     }
-    @include media("<=xl",">sm"){
+
+    @include media("<=xl", ">sm") {
       width: auto;
     }
   }
@@ -40,6 +41,7 @@
     text-align: justify;
     line-height: 2rem;
     box-sizing: border-box;
+
     @include media("<=sm") {
       line-height: 1.4rem;
     }
@@ -71,11 +73,13 @@
       border: 3px solid #e1e1e1;
       overflow: hidden;
       border-radius: 5px;
+
       li {
         display: flex;
         border-bottom: 3px solid #e1e1e1;
         box-sizing: border-box;
         transition: 0.3s;
+
         &:last-child {
           border-bottom: none;
         }
@@ -84,6 +88,7 @@
           padding: 1rem;
           box-sizing: border-box;
           font-family: Inter;
+
           @include media("<=sm") {
             padding: 0.5rem;
           }
@@ -102,20 +107,24 @@
 
         @include media("<=sm") {
           flex-direction: column;
+
           .detail_name {
             border-right: 0;
             width: 100%;
           }
         }
       }
+
       @include media("<=sm") {
         margin: 1rem auto;
       }
     }
+
     @include media("<=sm") {
       border-width: 1px;
     }
   }
+
   @include media("<=sm") {
     padding: 1rem;
     border-radius: 0;
@@ -125,6 +134,7 @@
 .head_center {
   width: max-content;
   margin: 2rem auto;
+
   @include media("<=sm") {
     font-size: 1.4rem;
     width: auto;
@@ -139,18 +149,20 @@
     border-radius: 10px;
     display: flex;
 
-    .desktop-view{
-      @include media("<=sm"){
+    .desktop-view {
+      @include media("<=sm") {
         display: none !important;
       }
 
-      @include media("<=1455px",">=md"){
-        li{
+      @include media("<=1455px", ">=md") {
+        li {
           width: 100%;
-          div{
+
+          div {
             min-height: 90px;
           }
-          .table_heading{
+
+          .table_heading {
             white-space: normal;
             text-overflow: unset;
             width: auto;
@@ -159,17 +171,20 @@
       }
     }
 
-    .mobile-view{
+    .mobile-view {
       border: none;
       border-bottom: 3px solid #e1e1e1;
-      li{
+
+      li {
         border: 3px solid #e1e1e1;
         border-bottom: 0;
-        div{
+
+        div {
           border: none !important;
         }
       }
-      @include media(">=sm"){
+
+      @include media(">=sm") {
         display: none !important;
       }
     }
@@ -184,6 +199,7 @@
       overflow: hidden;
       border-radius: 5px;
       display: flex;
+
       li {
         display: flex;
         flex-direction: column;
@@ -202,7 +218,7 @@
           max-height: 80px;
           white-space: nowrap;
           text-overflow: ellipsis;
-          overflow: hidden;          
+          overflow: hidden;
         }
 
         @include media("<=sm") {
@@ -213,23 +229,28 @@
               }
             }
           }
+
           div {
             position: relative;
+
             &:nth-child(1) {
               &::after {
                 content: "Category";
               }
             }
+
             &:nth-child(2) {
               &::after {
                 content: "(Early Reg.)";
               }
             }
+
             &:nth-child(3) {
               &::after {
                 content: "(Late Reg.)";
               }
             }
+
             &::after {
               position: absolute;
               top: 0;
@@ -243,10 +264,13 @@
         }
       }
     }
+
     @include media("<=sm") {
       border-width: 1px;
+
       ul {
         flex-direction: column;
+
         li {
           flex-direction: column;
         }
@@ -281,8 +305,99 @@
     width: auto;
     font-size: 1em;
   }
-  @include media("<=xl",">sm"){
+
+  @include media("<=xl", ">sm") {
     font-size: 1.5rem;
     width: auto;
   }
+}
+
+.register_fee {
+  color: #005499;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.registeration_fee {
+  color: #005499;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  border: none !important;
+  width: max-content;
+  padding: 0 !important;
+  display: inline !important;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #00000050;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .otherPaymentDialouge {
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: #fff;
+
+    .modalData {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        line-height: 20px;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+
+      #spmem {
+        padding: 0.5rem 1rem;
+        border: 1px solid #e1e1e1;
+        font-size: 22px;
+        border-radius: 6px;
+        outline: none;
+
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+          -moz-appearance: textfield;
+        }
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 22px;
+        color: #fff;
+        background-color: #005499;
+        border-radius: 6px;
+        width: 100%;
+        outline: 0;
+        box-sizing: border-box;
+        border: none;
+        margin-top: 0.5rem;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
 }

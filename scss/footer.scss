@@ -1,4 +1,5 @@
 @import "_config.scss";
+
 .main_footer {
   background-color: #ffffff;
 
@@ -41,8 +42,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   img {
     width: 30%;
+    margin-top: 1rem;
+
     &:nth-child(2) {
       width: 20%;
       margin-top: 1rem;
@@ -51,6 +55,7 @@
 
   @include media("<=sm") {
     width: 100%;
+
     img {
       width: 100%;
     }
@@ -64,9 +69,11 @@
     margin: 1rem 3rem 0 0;
     font-family: "Raleway-Regular";
   }
+
   ul {
     padding: 0 0 0 0.5rem;
     width: max-content;
+
     li {
       list-style: none;
       position: relative;
@@ -111,16 +118,19 @@
 .mail_details {
   display: flex;
   flex-direction: column;
+
   span {
     margin-top: 1rem;
     width: max-content;
     cursor: pointer;
     user-select: none;
     transition: color 0.3s;
+
     &:hover {
       color: green;
     }
   }
+
   h3 {
     font-weight: 400;
     font-family: "Raleway-Regular", -apple-system, BlinkMacSystemFont,
@@ -143,17 +153,21 @@
 
 .social_accounts {
   margin-top: 0.5rem;
+
   span {
     font-weight: bold;
   }
+
   div {
     display: flex;
+
     img {
       height: 32px;
       width: 32px;
       margin: 0.5rem;
       cursor: pointer;
       animation: shake-reverse 0.5s forwards ease;
+
       &:hover {
         animation: shake 0.5s forwards ease;
       }
@@ -185,15 +199,19 @@
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(-30deg);
   }
+
   50% {
     transform: rotate(30deg);
   }
+
   75% {
     transform: rotate(-10deg);
   }
+
   100% {
     transform: rotate(10deg);
   }
@@ -203,15 +221,19 @@
   0% {
     transform: rotate(10deg);
   }
+
   25% {
     transform: rotate(-10deg);
   }
+
   50% {
     transform: rotate(30deg);
   }
+
   75% {
     transform: rotate(-30deg);
   }
+
   100% {
     transform: rotate(0deg);
   }

@@ -147,92 +147,20 @@ if (pageparams == "") {
 if (pageparams == "about") {
   document.querySelector(".about_component").style.cssText = "visibility: hidden; opacity: 0";
   document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".about_component").removeAttribute("style") }, 1000) })
-  function changeabout(num) {
-    let togglers = document.querySelectorAll(".about_uni");
-    let aboutJan = document.querySelector(".about_JanWyzykowski");
-    let aboutUni = document.querySelector(".about_uniinov");
-    let aboutPeitUni = document.querySelector(".about_pietuni");
-    let aboutIisUni = document.querySelector(".about_iisdtbu");
-    let aboutiesUni = document.querySelector(".about_iesuni");
-    togglers.forEach((ele) => {
-      ele.classList.remove("activeitem");
-    });
-    if (num == 1) {
-      togglers[0].classList.add("activeitem");
-      if (aboutJan.classList.contains("activeabitem")) return;
-      else {
-        aboutJan.classList.replace("inactiveabitem", "activeabitem");
-        aboutUni.classList.remove("activeabitem");
-        aboutPeitUni.classList.remove("activeabitem");
-        aboutIisUni.classList.remove("activeabitem");
-        aboutiesUni.classList.remove("activeabitem");
-        aboutUni.classList.add("inactiveabitem");
-        aboutPeitUni.classList.add("inactiveabitem");
-        aboutIisUni.classList.add("inactiveabitem");
-        aboutiesUni.classList.add("inactiveabitem");
-      }
-    }
-    if (num == 2) {
-      togglers[1].classList.add("activeitem");
-      if (aboutPeitUni.classList.contains("activeabitem")) return;
-      else {
-        aboutPeitUni.classList.replace("inactiveabitem", "activeabitem");
-        aboutJan.classList.remove("activeabitem");
-        aboutUni.classList.remove("activeabitem");
-        aboutIisUni.classList.remove("activeabitem");
-        aboutiesUni.classList.remove("activeabitem");
-        aboutJan.classList.add("inactiveabitem");
-        aboutUni.classList.add("inactiveabitem");
-        aboutIisUni.classList.add("inactiveabitem");
-        aboutiesUni.classList.add("inactiveabitem");
-      }
-    }
-    if (num == 3) {
-      togglers[2].classList.add("activeitem");
-      if (aboutUni.classList.contains("activeabitem")) return;
-      else {
-        aboutUni.classList.replace("inactiveabitem", "activeabitem");
-        aboutJan.classList.remove("activeabitem");
-        aboutPeitUni.classList.remove("activeabitem");
-        aboutIisUni.classList.remove("activeabitem");
-        aboutiesUni.classList.remove("activeabitem");
-        aboutJan.classList.add("inactiveabitem");
-        aboutPeitUni.classList.add("inactiveabitem");
-        aboutIisUni.classList.add("inactiveabitem");
-        aboutiesUni.classList.add("inactiveabitem");
-      }
-    }
-    if (num == 4) {
-      togglers[3].classList.add("activeitem");
-      if (aboutIisUni.classList.contains("activebitem")) return;
-      else {
-        aboutIisUni.classList.replace("inactiveabitem", "activeabitem");
-        aboutJan.classList.remove("activeabitem");
-        aboutUni.classList.remove("activeabitem");
-        aboutPeitUni.classList.remove("activeabitem");
-        aboutiesUni.classList.remove("activeabitem");
-        aboutJan.classList.add("inactiveabitem");
-        aboutUni.classList.add("inactiveabitem");
-        aboutPeitUni.classList.add("inactiveabitem");
-        aboutiesUni.classList.add("inactiveabitem");
-      }
-    }
-    if (num == 5) {
-      togglers[4].classList.add("activeitem");
-      if (aboutiesUni.classList.contains("activebitem")) return;
-      else {
-        aboutiesUni.classList.replace("inactiveabitem", "activeabitem");
-        aboutJan.classList.remove("activeabitem");
-        aboutUni.classList.remove("activeabitem");
-        aboutPeitUni.classList.remove("activeabitem");
-        aboutIisUni.classList.remove("activeabitem");
-        aboutJan.classList.add("inactiveabitem");
-        aboutUni.classList.add("inactiveabitem");
-        aboutPeitUni.classList.add("inactiveabitem");
-        aboutIisUni.classList.add("inactiveabitem");
-      }
-    }
-  }
+  let togglers = document.querySelectorAll(".about_uni");
+  let aboutItem = document.querySelectorAll(".about_item");
+  togglers.forEach((ele, ind) => {
+    ele.addEventListener("click", function () {
+      togglers.forEach((elem) => {
+        elem.classList.remove("activeitem");
+      })
+      ele.classList.add("activeitem")
+      aboutItem.forEach((elem) => {
+        elem.classList.replace("activeabitem", "inactiveabitem")
+      })
+      aboutItem[ind].classList.replace("inactiveabitem", "activeabitem")
+    })
+  })
 }
 
 // Paper Section

@@ -80,13 +80,12 @@
   position: absolute;
   top: 0;
   background-color: #ffffff;
-  height: 15rem;
+  height: 12rem;
   justify-content: center;
   align-items: center;
 }
 .logo_container img {
-  height: auto;
-  width: 70%;
+  width: 60%;
 }
 .logo_container img:nth-child(2) {
   width: 40%;
@@ -125,10 +124,10 @@
 .title_container h4 {
   font-family: "Raleway-Regular";
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.2rem;
-  margin: 0 9rem;
+  margin: 0 4rem;
 }
 .title_container .big-title-2 {
   display: none;
@@ -142,9 +141,8 @@
   }
   .title_container h4 {
     margin: 0 1rem;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-family: "Helvetica";
+    font-size: 1rem;
+    line-break: loose;
   }
   .title_container .big-title {
     display: none;

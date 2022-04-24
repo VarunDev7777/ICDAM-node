@@ -133,11 +133,7 @@
   display: none;
 }
 
-.about_JanWyzykowski,
-.about_uniinov,
-.about_pietuni,
-.about_iisdtbu,
-.about_iesuni {
+.about_item {
   width: 80%;
   padding: 1rem;
   border-top: 1px solid #ececec;
@@ -150,11 +146,7 @@
   text-align: justify;
 }
 @media (max-width: 767px) {
-  .about_JanWyzykowski,
-.about_uniinov,
-.about_pietuni,
-.about_iisdtbu,
-.about_iesuni {
+  .about_item {
     width: 100%;
     font-size: 14px;
     line-height: 20px;
