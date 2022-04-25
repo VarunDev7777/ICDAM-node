@@ -201,30 +201,30 @@ if (pageparams == "papers") {
 
 // Registration section
 if (pageparams == "registrations") {
-  document.querySelector(".registration_container").style.cssText = "visibility: hidden; opacity: 0";
-  document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".registration_container").removeAttribute("style") }, 1000) })
-  let targetString = document.querySelector(".ml6 .letters");
-  targetString.innerHTML = targetString.textContent.replace(
-    /\S/g,
-    "<span class='letter'>$&</span>"
-  );
+  // document.querySelector(".registration_container").style.cssText = "visibility: hidden; opacity: 0";
+  // document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".registration_container").removeAttribute("style") }, 1000) })
+  // let targetString = document.querySelector(".ml6 .letters");
+  // targetString.innerHTML = targetString.textContent.replace(
+  //   /\S/g,
+  //   "<span class='letter'>$&</span>"
+  // );
 
-  anime
-    .timeline({ loop: true })
-    .add({
-      targets: ".ml6 .letter",
-      translateY: ["1.2em", 0],
-      translateZ: 0,
-      duration: 750,
-      delay: (el, i) => 50 * i,
-    })
-    .add({
-      targets: ".ml6",
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000,
-    });
+  // anime
+  //   .timeline({ loop: true })
+  //   .add({
+  //     targets: ".ml6 .letter",
+  //     translateY: ["1.2em", 0],
+  //     translateZ: 0,
+  //     duration: 750,
+  //     delay: (el, i) => 50 * i,
+  //   })
+  //   .add({
+  //     targets: ".ml6",
+  //     opacity: 0,
+  //     duration: 1000,
+  //     easing: "easeOutExpo",
+  //     delay: 1000,
+  //   });
 }
 
 // committee section
