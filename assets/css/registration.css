@@ -187,9 +187,13 @@
 .fee_structure .fee_struc_table .mobile-view li {
   border: 3px solid #e1e1e1;
   border-bottom: 0;
+  display: flex;
 }
 .fee_structure .fee_struc_table .mobile-view li div {
   border: none !important;
+}
+.fee_structure .fee_struc_table .mobile-view li .registeration_fee {
+  margin-left: 20px;
 }
 @media (min-width: 767px) {
   .fee_structure .fee_struc_table .mobile-view {
@@ -234,9 +238,6 @@
     position: relative;
   }
   .fee_structure .fee_struc_table ul li div:nth-child(1)::after {
-    content: "Category";
-  }
-  .fee_structure .fee_struc_table ul li div:nth-child(2)::after {
     content: "(Early Reg.)";
   }
   .fee_structure .fee_struc_table ul li div:nth-child(3)::after {
@@ -300,6 +301,8 @@
 .register_fee {
   color: #005499;
   transition: color 0.3s ease;
+  display: flex;
+  position: relative;
 }
 .register_fee:hover {
   color: red;
@@ -313,6 +316,19 @@
   width: max-content;
   padding: 0 !important;
   display: inline !important;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 .registeration_fee:hover {
   color: red;

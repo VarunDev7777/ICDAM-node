@@ -178,9 +178,14 @@
       li {
         border: 3px solid #e1e1e1;
         border-bottom: 0;
+        display: flex;
 
         div {
           border: none !important;
+        }
+
+        .registeration_fee {
+          margin-left: 20px;
         }
       }
 
@@ -233,13 +238,13 @@
           div {
             position: relative;
 
-            &:nth-child(1) {
-              &::after {
-                content: "Category";
-              }
-            }
+            // &:nth-child(0) {
+            //   &::after {
+            //     content: "Category";
+            //   }
+            // }
 
-            &:nth-child(2) {
+            &:nth-child(1) {
               &::after {
                 content: "(Early Reg.)";
               }
@@ -315,6 +320,8 @@
 .register_fee {
   color: #005499;
   transition: color 0.3s ease;
+  display: flex;
+  position: relative;
 
   &:hover {
     color: red;
@@ -329,6 +336,19 @@
   width: max-content;
   padding: 0 !important;
   display: inline !important;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 
   &:hover {
     color: red;

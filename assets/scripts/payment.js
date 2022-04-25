@@ -57,13 +57,13 @@ const handleOther = () => {
 document.querySelectorAll('.registeration_fee').forEach((ele, ind) => {
 	ele.addEventListener("click", () => {
 		switch (ind) {
-			case 0: handlePay({ category: 'Research Scholar/Student', fee: '30000', mail: '' });
+			case 0 || 4: handlePay({ category: 'Research Scholar/Student', fee: '30000', mail: '' });
 				break;
-			case 1: handlePay({ category: 'Academician', fee: '35000', mail: '' });
+			case 1 || 5: handlePay({ category: 'Academician', fee: '35000', mail: '' });
 				break;
-			case 2: handlePay({ category: 'Industrial Participant', fee: '10000', mail: '' });
+			case 2 || 6: handlePay({ category: 'Industrial Participant', fee: '10000', mail: '' });
 				break;
-			case 3: handleOther();
+			case 3 || 7: handleOther();
 				break;
 		}
 	})
